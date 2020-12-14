@@ -1,0 +1,121 @@
+.backToTop{
+	width: 40px;
+	height: 40px;
+	font-size: 30px;
+	display: flex;
+	border-radius: 50%;
+	justify-content: center;
+	align-items: center;
+	background-color: #ffc600;
+	color: white;
+	opacity: 0.7;
+	position: fixed;
+	bottom: -10%;
+	right: 2%;
+	z-index: 10;
+	transition: all 0.5s
+}
+.backToTop:hover{
+	opacity: 1;
+	cursor: pointer;
+}
+
+/*HEADER*/
+.header-box{
+	height: 150px;
+}
+.header-box .header-info{
+	height: 30px;
+	background-color: black;
+}
+.header-box .header-info p{
+	line-height: 30px;
+}
+.header-box .header-info .info{
+	position: absolute;
+	left: 0;
+}
+.header-box .header-info .info span{
+	margin-right: 15px;
+}
+.header-box .header-info .info span a{
+	font-size: 16px;
+	color: #aaa;
+	text-decoration: none;
+}
+.header-box .header-info .info span a:hover{
+	color: white;
+	cursor: pointer;
+}
+.header-box .header-info .icon{
+	position: absolute;
+	right: 0;
+}
+.header-box .header-info .icon a{
+	font-size: 16px;
+	color: #aaa;
+	margin-left: 15px;
+}
+.header-box .header-info .icon a:hover{
+	color: white;
+}
+.header-box .header{
+	height: 120px;
+	background-image: url(../img/dark_wall.webp);
+	background-repeat: repeat-x;
+}
+.header-box .header img{
+	height: 40px;
+	margin-top: 40px;
+}
+.header-box .header .menu{
+	position: absolute;
+	right: 0;
+	top: 40px;
+	height: 40px;
+}
+.header-box .header .menu li{
+	list-style-type: none;
+	display: inline-block;
+}
+.header-box .header .menu li .title{
+	
+}
+.header-box .header .menu li .title{
+	line-height: 40px;
+	text-decoration: none;
+	border: 2px solid transparent;
+	color: #aaa;
+	padding: 10px 15px;
+	/*position: relative;*/
+}
+.header-box .header .menu li:first-child .title{
+	border: 2px solid #d7b38c;
+	color: white;
+}
+.header-box .header .menu li .title:hover{
+	border: 2px solid #d7b38c;
+	color: white;
+}
+.header-box .header .menu li .drop-menu{
+	position: absolute;
+	top: 45px;
+	left: 0;
+	background-color: #ccc;
+	color: black;	
+}
+.header-box .header .menu li .drop-menu .drop-item{
+	width: 
+}
+.header-box .header .menu li .drop-menu .drop-item a{
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
+	padding: 10px 15px;
+}
+
+
+
+
+
+/*END HEADER*/

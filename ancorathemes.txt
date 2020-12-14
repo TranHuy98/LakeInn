@@ -1,0 +1,22 @@
+1. Index check
+http://lakeinn.ancorathemes.com/home/home-2/
+2.About check
+http://lakeinn.ancorathemes.com/about/
+3.Team check
+http://lakeinn.ancorathemes.com/our-team/
+4.Details Team check
+http://lakeinn.ancorathemes.com/team/angelina-whitehead/
+5.List rooms check
+http://lakeinn.ancorathemes.com/room-rates/
+6.Details rooms check
+http://lakeinn.ancorathemes.com/rooms/standard/
+6.Article check
+http://lakeinn.ancorathemes.com/category/portfolio-3-columns/
+7.Details article check
+http://lakeinn.ancorathemes.com/8-tips-for-traveling-india/
+8.Gallerry check
+http://lakeinn.ancorathemes.com/grid/
+
+
+COMPLETE: 0
+REMAIN : 8
