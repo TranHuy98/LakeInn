@@ -77,9 +77,12 @@
 .header-box .header .menu li{
 	list-style-type: none;
 	display: inline-block;
+	position: relative;
+	background-color: green;
+	padding-bottom: 40px;
 }
 .header-box .header .menu li .title{
-	
+
 }
 .header-box .header .menu li .title{
 	line-height: 40px;
@@ -87,7 +90,6 @@
 	border: 2px solid transparent;
 	color: #aaa;
 	padding: 10px 15px;
-	/*position: relative;*/
 }
 .header-box .header .menu li:first-child .title{
 	border: 2px solid #d7b38c;
@@ -98,20 +100,34 @@
 	color: white;
 }
 .header-box .header .menu li .drop-menu{
+	margin-top: 5px;
+	color: black;
 	position: absolute;
+	z-index: 1;
+	top: 90px;
+	left: 15px;
+	width: 150%;
+	opacity: 0;
+	pointer-events: none;
+}
+.header-box .header .menu li:hover .drop-menu{
 	top: 45px;
-	left: 0;
-	background-color: #ccc;
-	color: black;	
+	opacity: 1;
+	pointer-events: all;
+	transition: all 0.5s;
 }
-.header-box .header .menu li .drop-menu .drop-item{
-	width: 
+.header-box .header .menu li .drop-menu .drop-items .item{
+	height: 40px;
+	line-height: 40px;
+	background-color: white;
+	border-bottom: 1px solid #ccc;
 }
-.header-box .header .menu li .drop-menu .drop-item a{
+.header-box .header .menu li .drop-menu .drop-items .item a{
 	text-decoration: none;
 	color: black;
-	cursor: pointer;
-	padding: 10px 15px;
+}
+.header-box .header .menu li .drop-menu .drop-items .item:hover{
+	background-color: #ccc;
 }
 
 
