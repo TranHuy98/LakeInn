@@ -78,11 +78,7 @@
 	list-style-type: none;
 	display: inline-block;
 	position: relative;
-	background-color: green;
-	padding-bottom: 40px;
-}
-.header-box .header .menu li .title{
-
+	padding-bottom: 5px;
 }
 .header-box .header .menu li .title{
 	line-height: 40px;
@@ -104,32 +100,74 @@
 	color: black;
 	position: absolute;
 	z-index: 1;
-	top: 90px;
-	left: 15px;
+	top: 120px;
 	width: 150%;
 	opacity: 0;
 	pointer-events: none;
 }
+@keyframes MENUDROP{
+	0%{
+		top: 120px;
+	}
+	100%{
+		top: 40px;
+	}
+}
 .header-box .header .menu li:hover .drop-menu{
-	top: 45px;
+	top: 40px;
 	opacity: 1;
 	pointer-events: all;
 	transition: all 0.5s;
 }
-.header-box .header .menu li .drop-menu .drop-items .item{
+.header-box .header .menu li:hover .title{
+	border: 2px solid #d7b38c;
+	color: white;
+}
+.header-box .header .menu li .drop-menu .item{
+	/*height: 40px;*/
+	line-height: 40px;
+	background-color: white;
+	border-bottom: 1px solid #ccc;
+	word-wrap: break-word;
+}
+.header-box .header .menu li .drop-menu .item a{
+	text-decoration: none;
+	color: black;
+}
+.header-box .header .menu li .drop-menu .item:hover{
+	background-color: #ccc;
+}
+/*dropchild*/
+.header-box .header .menu li .drop-child-menu{
+	color: black;
+	position: absolute;
+	z-index: 1;
+	top: 80px;
+	left: 102%;
+	width: 150%;
+	opacity: 0;
+	pointer-events: none;
+}
+.header-box .header .menu li .drop-menu .item:hover .drop-child-menu{
+	top: 0px;
+	opacity: 1;
+	pointer-events: all;
+	transition: all 0.5s;
+}
+.header-box .header .menu li .drop-child-menu .item{
 	height: 40px;
 	line-height: 40px;
 	background-color: white;
 	border-bottom: 1px solid #ccc;
 }
-.header-box .header .menu li .drop-menu .drop-items .item a{
+.header-box .header .menu li .drop-child-menu .item a{
 	text-decoration: none;
 	color: black;
 }
-.header-box .header .menu li .drop-menu .drop-items .item:hover{
+.header-box .header .menu li .drop-child-menu .item:hover{
 	background-color: #ccc;
 }
-
+/*end dropchild*/
 
 
 
