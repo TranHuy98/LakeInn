@@ -81,6 +81,9 @@
 	padding-bottom: 5px;
 }
 .header-box .header .menu li .title{
+
+}
+.header-box .header .menu li .title{
 	line-height: 40px;
 	text-decoration: none;
 	border: 2px solid transparent;
@@ -105,14 +108,6 @@
 	opacity: 0;
 	pointer-events: none;
 }
-@keyframes MENUDROP{
-	0%{
-		top: 120px;
-	}
-	100%{
-		top: 40px;
-	}
-}
 .header-box .header .menu li:hover .drop-menu{
 	top: 40px;
 	opacity: 1;
@@ -124,11 +119,9 @@
 	color: white;
 }
 .header-box .header .menu li .drop-menu .item{
-	/*height: 40px;*/
 	line-height: 40px;
 	background-color: white;
 	border-bottom: 1px solid #ccc;
-	word-wrap: break-word;
 }
 .header-box .header .menu li .drop-menu .item a{
 	text-decoration: none;
@@ -155,7 +148,6 @@
 	transition: all 0.5s;
 }
 .header-box .header .menu li .drop-child-menu .item{
-	height: 40px;
 	line-height: 40px;
 	background-color: white;
 	border-bottom: 1px solid #ccc;
