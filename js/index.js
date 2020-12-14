@@ -13,3 +13,15 @@ $(document).ready(function(){
       $('html,body').animate({scrollTop: 0},1000);
    });
 });
+
+//banner slider
+$(document).ready(function(){
+  $('.banner-slide').slick({
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
+    prevArrow: '.prevBanner',
+    nextArrow: '.nextBanner',
+  });
+});

@@ -1,12 +1,12 @@
 .backToTop{
 	width: 40px;
 	height: 40px;
-	font-size: 30px;
+	font-size: 20px;
 	display: flex;
-	border-radius: 50%;
 	justify-content: center;
 	align-items: center;
-	background-color: #ffc600;
+	background-color: black;
+	border: 1px solid white;
 	color: white;
 	opacity: 0.7;
 	position: fixed;
@@ -18,6 +18,7 @@
 .backToTop:hover{
 	opacity: 1;
 	cursor: pointer;
+	background-color: #d7b38c;
 }
 
 /*HEADER*/
@@ -165,3 +166,65 @@
 
 
 /*END HEADER*/
+
+/*BANNER*/
+.banner{
+	position: relative;
+}
+.banner .item{
+	width: 100%;
+	height: 800px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.banner .banner-slide{
+	
+}
+.banner-slide .item:focus{
+	outline: none;
+}
+.banner-slide .title{
+	position: absolute;
+	top: 20%;
+	font-size: 60px;
+	color: yellow;
+	width: 100%;
+	text-align: center;
+}
+.banner-slide .description{
+	position: absolute;
+	top: 30%;
+	font-size: 25px;
+	color: yellow;
+	width: 100%;
+	text-align: center;
+}
+.prev-banner-box{
+	position: absolute;
+	line-height: 800px;
+	top: 0;
+	left: 0;
+	height: 100%;
+	z-index: 2;
+}
+.prev-banner-box i{
+	font-size: 50px;
+	color: white;
+	cursor: pointer;
+}
+.next-banner-box{
+	position: absolute;
+	line-height: 800px;
+	top: 0;
+	right: 0;
+	height: 100%;
+	z-index: 2;
+}
+.next-banner-box i{
+	font-size: 50px;
+	color: white;
+	cursor: pointer;
+}
+
+/*END BANNER*/
