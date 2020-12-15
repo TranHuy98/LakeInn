@@ -71,7 +71,7 @@ body{
 }
 .header-box .header{
 	height: 120px;
-	background-image: url(../img/dark_wall.webp);
+	background-image: url(../img/dark-wall.webp);
 	background-repeat: repeat-x;
 }
 .header-box .header img{
@@ -215,7 +215,7 @@ body{
 	outline: none;
 }
 .banner-slide .title{
-	margin-top: 10%;
+	margin-top: 15%;
 	font-size: 80px;
 	color: white;
 	letter-spacing: 5px;
@@ -239,7 +239,11 @@ body{
 	animation-duration: 1s;
 	/*animation-name: APPEAR;*/
 	animation-timing-function: linear;
-	animation-delay: 1s
+	animation-delay: 1s;
+}
+.slide-appear{
+	opacity: 0;	
+	animation-name: APPEAR;
 }
 @keyframes APPEAR{
 	0%{
@@ -261,6 +265,7 @@ body{
 	font-size: 50px;
 	color: white;
 	cursor: pointer;
+	opacity: 0.7;
 }
 .next-banner-box{
 	position: absolute;
@@ -274,6 +279,7 @@ body{
 	font-size: 50px;
 	color: white;
 	cursor: pointer;
+	opacity: 0.7;
 }
 .banner .booking{
 	width: 90%;
@@ -379,7 +385,302 @@ body{
 	background-position: center;
 	background-size: cover;
 }
-
-
+.welcome .detail{
+	margin-top: 50px;
+}
+.welcome .detail p{
+	width: 80%;
+	margin-left: 10%;
+	font-size: 20px;
+	text-align: center;
+}
+.welcome .detail .more{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.welcome .detail .more input{
+	width: 15%;
+	border: 2px solid transparent;
+	background-color: black;
+	color: white;
+	font-size: 16px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	text-transform: uppercase;
+	border-radius: 5px;
+	font-weight: bold;
+}
+.welcome .detail .more input:hover{
+	border: 2px solid black;
+	background-color: white;
+	color: black;
+	cursor: pointer;
+	transition: all 0.5s;
+}
 
 /*END WELCOME*/
+
+/*INTRODUCE ROOMS*/
+.introduce{
+	height: 500px;
+	background-image: url(../img/booking-big-image.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	border-top: 1px solid transparent;
+}
+.introduce .title{
+	width: 100%;
+	font-size: 60px;
+	text-align: center;
+	margin-top: 10%;
+	color: white;
+}
+.introduce .detail{
+	width: 100%;
+	font-size: 30px;
+	text-align: center;
+	margin-top: 30px;
+	color: white;
+}
+.introduce .book-btn{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+}
+.introduce .book-btn input{
+	width: 15%;
+	height: 40px;
+	line-height: 40px;
+	border: 2px solid transparent;
+	border-radius: 5px;
+	background-color: white;
+	color: black;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.introduce .book-btn input:hover{
+	color: white;
+	background-color: #d7b38c;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+/*END INTRODUCE ROOMS*/
+
+/*DINING*/
+.dining{
+	border-top: 1px solid transparent;
+	background-image: url(../img/light-wall.webp);
+	background-repeat: repeat;
+	border-bottom: 1px solid #ccc;
+}
+.dining .words{
+	margin-top: 50px;
+}
+.dining .words .title{
+	width: 100%;
+	text-align: center;
+	font-size: 50px;
+}
+.dining .words .icon-title{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.dining .words .detail{
+	margin-top: 30px;
+	width: 80%;
+	margin-left: 10%;
+	font-size: 20px;
+	text-align: center;
+}
+.dining .images{
+	margin-top: 50px;
+}
+.dining .dining-slide{
+	width: 80%;
+	margin-left: 10%;
+	margin-bottom: 100px;
+}
+.dining-slide .dining-item{
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 400px;
+	position: relative;
+	overflow: hidden;
+}
+.dining-slide .dining-item:focus{
+	outline: none;
+}
+.dining-slide .dining-item .info{
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	left: 100%;
+	bottom: 5px;
+	background-color: white;
+	z-index: 2;
+	animation-name: DINING-INFO;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in;
+}
+@keyframes DINING-INFO{
+	0%{
+		left: 100%;
+	}
+	100%{
+		left: 0;
+	}
+}
+.dining-slide .dining-item .info .title{
+	width: 90%;
+	font-size: 20px;
+	margin-left: 5%;
+}
+.dining-slide .dining-item .info .detail{
+	width: 90%;
+	font-size: 14px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	margin-left: 5%;
+	height: 20px;
+	line-height: 20px;
+}
+
+/*END DINING*/
+
+/*STATS*/
+.stats{
+	background-image: url(../img/light-wall.webp);
+	background-repeat: repeat;
+	border-top: 1px solid transparent;
+}
+.stats .title{
+	margin-top: 50px;
+	font-size: 50px;
+	width: 100%;
+	text-align: center;
+}
+.stats .icon-title{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.stats .info{
+	margin-top: 30px;
+}
+.stats .info .itemBox{
+	border: 15px solid transparent;
+	overflow: hidden;
+	position: relative;
+	height: 400px;
+	cursor: pointer;
+}
+.stats .info .itemBox:hover .item{
+	background-color: #f0f0f0;
+}
+.stats .info .itemBox .item{
+	width: 120%;
+	height: 100%;
+	padding: 50px;
+	margin-left: -10%;
+	background-color: white;
+}
+.stats .info .itemBox .item:before{
+	content: "";
+	position: absolute;
+	z-index: 1;
+	top: 15px;
+	left: 15px;
+	right: 15px;
+	bottom: 15px;
+	border: 1px solid #d7b38c;
+}
+.stats .info .itemBox .item .number{
+	width: 100%;
+	text-align: center;
+	font-size: 70px;
+	margin-top: 25%;
+}
+.stats .info .itemBox .item .slice{
+	width: 30%;
+	margin-left: 35%;
+	border-bottom: 5px solid #d7b38c;
+}
+.stats .info .itemBox .item .criteria{
+	margin-top: 5%;
+	width: 80%;
+	margin-left: 10%;
+	text-align: center;
+	font-size: 24px;
+}
+
+
+
+/*END STATS*/
+
+
+/*BLOGS*/
+.blogs{
+	background-image: url(../img/dark-wall.webp);
+	background-repeat: repeat;
+	border-top: 1px solid transparent;
+}
+.blogs .title{
+	margin-top: 50px;
+	font-size: 50px;
+	width: 100%;
+	text-align: center;
+	color: white;
+}
+.blogs .icon-title{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.blogs .info{
+	margin-top: 30px;
+}
+.blogs .info .itemBox{
+	border: 15px solid transparent;
+	overflow: hidden;
+	position: relative;
+	height: 400px;
+	cursor: pointer;
+}
+.blogs .info .itemBox:hover .item{
+	background-color: #f0f0f0;
+}
+.blogs .info .itemBox .item{
+	width: 120%;
+	height: 100%;
+	padding: 50px;
+	margin-left: -10%;
+	background-color: white;
+}
+.blogs .info .itemBox .item:before{
+	content: "";
+	position: absolute;
+	z-index: 1;
+	top: 15px;
+	left: 15px;
+	right: 15px;
+	bottom: 15px;
+	border: 1px solid #d7b38c;
+}
+
+
+/*END BLOGS*/

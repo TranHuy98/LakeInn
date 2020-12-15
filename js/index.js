@@ -31,9 +31,31 @@ $(document).ready(function(){
 //banner title
 $(document).ready(function(){
   $('.prevBanner').click(function(){
-    $('.banner-word').css('animation-name','APPEAR');
+    // $('.banner-word').addClass('slide-appear');
   });
   $('.nextBanner').click(function(){
-    $('.banner-word').css('animation-name','APPEAR');
+    // $('.banner-word').css('animation-name','APPEAR');
+  });
+});
+
+
+//dining-slide
+$(document).ready(function(){
+  $('.dining-slide').slick({
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
+    prevArrow: '.prevBanner',
+    nextArrow: '.nextBanner',
+  });
+});
+
+//stats
+$(document).ready(function(){
+  $('.number').counterUp({
+    'time': 2000,
   });
 });
