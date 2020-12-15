@@ -1,3 +1,8 @@
+
+
+body{
+	/*overflow: hidden;*/
+}
 .backToTop{
 	width: 40px;
 	height: 40px;
@@ -21,9 +26,11 @@
 	background-color: #d7b38c;
 }
 
+
 /*HEADER*/
 .header-box{
 	height: 150px;
+	width: 100%;
 }
 .header-box .header-info{
 	height: 30px;
@@ -40,7 +47,7 @@
 	margin-right: 15px;
 }
 .header-box .header-info .info span a{
-	font-size: 16px;
+	font-size: 14px;
 	color: #aaa;
 	text-decoration: none;
 }
@@ -79,7 +86,7 @@
 	list-style-type: none;
 	display: inline-block;
 	position: relative;
-	padding-bottom: 5px;
+	padding-bottom: 10px;
 }
 .header-box .header .menu li .title{
 
@@ -100,15 +107,28 @@
 	color: white;
 }
 .header-box .header .menu li .drop-menu{
-	margin-top: 5px;
+	margin-top: 10px;
 	color: black;
 	position: absolute;
 	z-index: 1;
 	top: 120px;
-	width: 150%;
+	width: 200%;
 	opacity: 0;
 	pointer-events: none;
 }
+/*ribbon*/
+.header-box .header .menu li .drop-menu .first:before{
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 15px;
+  border-top: 8px solid transparent;
+  border-right: 8px solid white;
+}
+.header-box .header .menu li .drop-menu .first:hover:before{
+	border-right: 8px solid #ccc;
+}
+/*end ribbon*/
 .header-box .header .menu li:hover .drop-menu{
 	top: 40px;
 	opacity: 1;
@@ -128,6 +148,12 @@
 	text-decoration: none;
 	color: black;
 }
+.header-box .header .menu li .drop-menu .item a span{
+	font-weight: lighter;
+	position: absolute;
+	line-height: 40px;
+	right: 10px;
+}
 .header-box .header .menu li .drop-menu .item:hover{
 	background-color: #ccc;
 }
@@ -138,7 +164,7 @@
 	z-index: 1;
 	top: 80px;
 	left: 102%;
-	width: 150%;
+	width: 100%;
 	opacity: 0;
 	pointer-events: none;
 }
@@ -156,6 +182,7 @@
 .header-box .header .menu li .drop-child-menu .item a{
 	text-decoration: none;
 	color: black;
+	margin-left: 0;
 }
 .header-box .header .menu li .drop-child-menu .item:hover{
 	background-color: #ccc;
@@ -171,15 +198,16 @@
 .banner{
 	position: relative;
 }
-.banner .item{
+.banner .banner-slide{
+	
+}
+.banner .banner-item{
 	width: 100%;
 	height: 800px;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center center;
 	background-size: cover;
-}
-.banner .banner-slide{
-	
+	background-clip: border-box;
 }
 .banner-slide .item:focus{
 	outline: none;
@@ -187,8 +215,9 @@
 .banner-slide .title{
 	position: absolute;
 	top: 20%;
-	font-size: 60px;
-	color: yellow;
+	font-size: 70px;
+	color: white;
+	letter-spacing: 5px;
 	width: 100%;
 	text-align: center;
 }
@@ -202,9 +231,9 @@
 }
 .prev-banner-box{
 	position: absolute;
-	line-height: 800px;
+	line-height: 600px;
 	top: 0;
-	left: 0;
+	left: 5%;
 	height: 100%;
 	z-index: 2;
 }
@@ -215,9 +244,9 @@
 }
 .next-banner-box{
 	position: absolute;
-	line-height: 800px;
+	line-height: 600px;
 	top: 0;
-	right: 0;
+	right: 5%;
 	height: 100%;
 	z-index: 2;
 }
@@ -225,6 +254,61 @@
 	font-size: 50px;
 	color: white;
 	cursor: pointer;
+}
+.banner .booking{
+	width: 90%;
+	position: absolute;
+	top: 600px;
+	height: 120px;
+	left: 5%;
+	z-index: 2;
+	background-color: #faf9f8;
+	border-top: 2px solid #d7b38c;
+}
+.booking form{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.booking li{
+	display: inline-block;
+	list-style-type: none;
+	margin-left: 20px;
+	margin-right: 20px;
+	height: 120px;
+}
+.booking li:last-child{
+	display: flex;
+	justify-content: center;
+}
+.booking li p{
+	line-height: 40px;
+	margin-top: 5px;
+	width: 100%;
+}
+.booking li .infos{
+	height: 40px;
+	margin-top: -10px;
+	width: 100%;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+.booking li .infos:focus{
+	outline: none;
+}
+.booking .submit-btn{
+	height: 40px;
+	width: 100%;
+	margin-top: 52px;
+	background-color: black;
+	color: white;
+	border-radius: 5px;
+	border: none;
+}
+.booking .submit-btn:hover{
+	background-color: #d7b38c;
+	cursor: pointer;
+	transition: all 0.5s;
 }
 
 /*END BANNER*/
