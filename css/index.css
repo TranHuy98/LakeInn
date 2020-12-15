@@ -1,5 +1,7 @@
 
-
+*{
+	font-family: 'Roboto Slab', serif;
+}
 body{
 	/*overflow: hidden;*/
 }
@@ -213,21 +215,39 @@ body{
 	outline: none;
 }
 .banner-slide .title{
-	position: absolute;
-	top: 20%;
-	font-size: 70px;
+	margin-top: 10%;
+	font-size: 80px;
 	color: white;
 	letter-spacing: 5px;
 	width: 100%;
 	text-align: center;
+	/*opacity: 0;*/
+	animation-fill-mode: forwards;
+	animation-duration: 1s;
+	/*animation-name: APPEAR;*/
+	animation-timing-function: linear;
+	animation-delay: 1s;
 }
 .banner-slide .description{
-	position: absolute;
-	top: 30%;
-	font-size: 25px;
-	color: yellow;
+	margin-top: 0px;
+	font-size: 20px;
+	color: white;
 	width: 100%;
 	text-align: center;
+	/*opacity: 0;	*/
+	animation-fill-mode: forwards;
+	animation-duration: 1s;
+	/*animation-name: APPEAR;*/
+	animation-timing-function: linear;
+	animation-delay: 1s
+}
+@keyframes APPEAR{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
 }
 .prev-banner-box{
 	position: absolute;
@@ -286,6 +306,9 @@ body{
 	margin-top: 5px;
 	width: 100%;
 }
+.booking li p span{
+	color: red;
+}
 .booking li .infos{
 	height: 40px;
 	margin-top: -10px;
@@ -312,3 +335,51 @@ body{
 }
 
 /*END BANNER*/
+
+/*WELCOME*/
+.welcome{
+	background-image: url(../img/light-wall.webp);
+	background-repeat: repeat;
+	border: 1px solid transparent;
+}
+.welcome .words{
+	margin-top: 50px;
+}
+.welcome .title{
+	width: 100%;
+	text-align: center;
+	font-size: 50px;
+}
+.welcome .icon-title{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.welcome .short-des{
+	width: 100%;
+	text-align: center;
+	font-size: 40px;
+}
+.welcome .images{
+	margin-top: 50px;
+	height: 400px;
+}
+.welcome .images .itemBox{
+	border: 15px solid transparent;
+	position: relative;
+}
+.welcome .images .itemBox .item{
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	position: absolute;
+	border: 15px solid white;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+
+
+/*END WELCOME*/

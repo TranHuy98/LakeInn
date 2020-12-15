@@ -27,3 +27,13 @@ $(document).ready(function(){
     nextArrow: '.nextBanner',
   });
 });
+
+//banner title
+$(document).ready(function(){
+  $('.prevBanner').click(function(){
+    $('.banner-word').css('animation-name','APPEAR');
+  });
+  $('.nextBanner').click(function(){
+    $('.banner-word').css('animation-name','APPEAR');
+  });
+});
