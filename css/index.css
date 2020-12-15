@@ -565,6 +565,7 @@ body{
 	background-image: url(../img/light-wall.webp);
 	background-repeat: repeat;
 	border-top: 1px solid transparent;
+	padding-bottom: 50px;
 }
 .stats .title{
 	margin-top: 50px;
@@ -582,30 +583,29 @@ body{
 	margin-top: 30px;
 }
 .stats .info .itemBox{
-	border: 15px solid transparent;
+	border: 15px solid white;
 	overflow: hidden;
 	position: relative;
 	height: 400px;
 	cursor: pointer;
-}
-.stats .info .itemBox:hover .item{
-	background-color: #f0f0f0;
-}
-.stats .info .itemBox .item{
-	width: 120%;
-	height: 100%;
-	padding: 50px;
-	margin-left: -10%;
 	background-color: white;
 }
-.stats .info .itemBox .item:before{
+.stats .info .itemBox:hover{
+	background-color: #f0f0f0;
+	border: 15px solid #f0f0f0;
+}
+.stats .info .itemBox .item{
+	width: 100%;
+	height: 100%;
+}
+.stats .info .itemBox:before{
 	content: "";
 	position: absolute;
-	z-index: 1;
-	top: 15px;
-	left: 15px;
-	right: 15px;
-	bottom: 15px;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 	border: 1px solid #d7b38c;
 }
 .stats .info .itemBox .item .number{
@@ -627,8 +627,6 @@ body{
 	font-size: 24px;
 }
 
-
-
 /*END STATS*/
 
 
@@ -637,6 +635,7 @@ body{
 	background-image: url(../img/dark-wall.webp);
 	background-repeat: repeat;
 	border-top: 1px solid transparent;
+	padding-bottom: 50px;
 }
 .blogs .title{
 	margin-top: 50px;
@@ -655,32 +654,47 @@ body{
 	margin-top: 30px;
 }
 .blogs .info .itemBox{
-	border: 15px solid transparent;
+	border: 15px solid white;
 	overflow: hidden;
 	position: relative;
 	height: 400px;
 	cursor: pointer;
-}
-.blogs .info .itemBox:hover .item{
-	background-color: #f0f0f0;
-}
-.blogs .info .itemBox .item{
-	width: 120%;
-	height: 100%;
-	padding: 50px;
-	margin-left: -10%;
 	background-color: white;
 }
-.blogs .info .itemBox .item:before{
+.blogs .info .itemBox:hover{
+	
+}
+.blogs .info .itemBox .item{
+	width: 100%;
+	height: 100%;
+}
+.blogs .info .itemBox:before{
 	content: "";
 	position: absolute;
-	z-index: 1;
-	top: 15px;
-	left: 15px;
-	right: 15px;
-	bottom: 15px;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 	border: 1px solid #d7b38c;
 }
-
+.blogs .info .itemBox .item .number{
+	width: 100%;
+	text-align: center;
+	font-size: 70px;
+	margin-top: 25%;
+}
+.blogs .info .itemBox .item .slice{
+	width: 30%;
+	margin-left: 35%;
+	border-bottom: 5px solid #d7b38c;
+}
+.blogs .info .itemBox .item .criteria{
+	margin-top: 5%;
+	width: 80%;
+	margin-left: 10%;
+	text-align: center;
+	font-size: 24px;
+}
 
 /*END BLOGS*/
