@@ -23,20 +23,11 @@ $(document).ready(function(){
     speed: 500,
     fade: true,
     cssEase: 'linear',
-    prevArrow: '.prevBanner',
-    nextArrow: '.nextBanner',
+    prevArrow: '#prevBanner',
+    nextArrow: '#nextBanner',
   });
 });
 
-//banner title
-$(document).ready(function(){
-  $('.prevBanner').click(function(){
-    // $('.banner-word').addClass('slide-appear');
-  });
-  $('.nextBanner').click(function(){
-    // $('.banner-word').css('animation-name','APPEAR');
-  });
-});
 
 
 //dining-slide
@@ -57,5 +48,19 @@ $(document).ready(function(){
 $(document).ready(function(){
   $('.number').counterUp({
     'time': 2000,
+  });
+});
+
+
+// review slide
+$(document).ready(function(){
+  $('.review-slide').slick({
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrow: false,
+    dots: true,
+    slideToShow: 1,
+    slideToScroll: 1,
   });
 });
