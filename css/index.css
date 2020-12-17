@@ -1,21 +1,28 @@
+:root{
+	--lightBG: url(../img/light-wall.jpg);
+	--darkBG: url(../img/dark-wall.jpg);
+	--darkText: black;
+	--lightText: white;
+}
+
 
 *{
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Roboto Slab', se	font-size: 20px;
+rif;
 }
 body{
-	background-image: url(../img/light-wall.jpg);
+	background-image: var(--lightBG);
 	background-repeat: repeat;
 }
 .backToTop{
 	width: 40px;
 	height: 40px;
-	font-size: 20px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: black;
-	border: 1px solid white;
-	color: white;
+	background-color: var(--darkText);
+	border: 1px solid var(--lightText);
+	color: var(--lightText);
 	opacity: 0.7;
 	position: fixed;
 	bottom: -10%;
@@ -37,7 +44,7 @@ body{
 }
 .header-box .header-info{
 	height: 30px;
-	background-color: black;
+	background-color: var(--darkText);
 }
 .header-box .header-info p{
 	line-height: 30px;
@@ -55,7 +62,7 @@ body{
 	text-decoration: none;
 }
 .header-box .header-info .info span a:hover{
-	color: white;
+	color: var(--lightText);
 	cursor: pointer;
 }
 .header-box .header-info .icon{
@@ -68,11 +75,11 @@ body{
 	margin-left: 15px;
 }
 .header-box .header-info .icon a:hover{
-	color: white;
+	color: var(--lightText);
 }
 .header-box .header{
 	height: 120px;
-	background-image: url(../img/dark-wall.jpg);
+	background-image: var(--darkBG);
 	background-repeat: repeat-x;
 }
 .header-box .header img{
@@ -92,9 +99,6 @@ body{
 	padding-bottom: 10px;
 }
 .header-box .header .menu li .title{
-
-}
-.header-box .header .menu li .title{
 	line-height: 40px;
 	text-decoration: none;
 	border: 2px solid transparent;
@@ -103,15 +107,15 @@ body{
 }
 .header-box .header .menu li:first-child .title{
 	border: 2px solid #d7b38c;
-	color: white;
+	color: var(--lightText);
 }
 .header-box .header .menu li .title:hover{
 	border: 2px solid #d7b38c;
-	color: white;
+	color: var(--lightText);
 }
 .header-box .header .menu li .drop-menu{
 	margin-top: 10px;
-	color: black;
+	color: var(--darkText);
 	position: absolute;
 	z-index: 1;
 	top: 120px;
@@ -129,7 +133,7 @@ body{
   border-right: 8px solid #eee;
 }
 .header-box .header .menu li .drop-menu .first:hover:before{
-	border-right: 8px solid white;
+	border-right: 8px solid var(--lightText);
 }
 /*end ribbon*/
 .header-box .header .menu li:hover .drop-menu{
@@ -140,7 +144,7 @@ body{
 }
 .header-box .header .menu li:hover .title{
 	border: 2px solid #d7b38c;
-	color: white;
+	color: var(--lightText);
 }
 .header-box .header .menu li .drop-menu .item{
 	line-height: 40px;
@@ -149,7 +153,7 @@ body{
 }
 .header-box .header .menu li .drop-menu .item a{
 	text-decoration: none;
-	color: black;
+	color: var(--darkText);
 }
 .header-box .header .menu li .drop-menu .item a span{
 	font-weight: lighter;
@@ -158,11 +162,11 @@ body{
 	right: 10px;
 }
 .header-box .header .menu li .drop-menu .item:hover{
-	background-color: white;
+	background-color: var(--lightText);
 }
 /*dropchild*/
 .header-box .header .menu li .drop-child-menu{
-	color: black;
+	color: var(--darkText);
 	position: absolute;
 	z-index: 1;
 	top: 80px;
@@ -184,11 +188,11 @@ body{
 }
 .header-box .header .menu li .drop-child-menu .item a{
 	text-decoration: none;
-	color: black;
+	color: var(--darkText);
 	margin-left: 0;
 }
 .header-box .header .menu li .drop-child-menu .item:hover{
-	background-color: white;
+	background-color: var(--lightText);
 }
 /*end dropchild*/
 
@@ -197,6 +201,7 @@ body{
 /*BANNER*/
 .banner{
 	position: relative;
+	margin-top: 0px;
 }
 .banner .banner-slide{
 	
@@ -215,7 +220,7 @@ body{
 .banner-slide .title{
 	margin-top: 15%;
 	font-size: 80px;
-	color: white;
+	color: var(--lightText);
 	letter-spacing: 2px;
 	width: 100%;
 	text-align: center;
@@ -223,7 +228,7 @@ body{
 .banner-slide .description{
 	margin-top: 0px;
 	font-size: 20px;
-	color: white;
+	color: var(--lightText);
 	width: 100%;
 	text-align: center;
 }
@@ -237,7 +242,7 @@ body{
 }
 .prev-banner-box i{
 	font-size: 50px;
-	color: white;
+	color: var(--lightText);
 	cursor: pointer;
 	opacity: 0.7;
 }
@@ -254,7 +259,7 @@ body{
 }
 .next-banner-box i{
 	font-size: 50px;
-	color: white;
+	color: var(--lightText);
 	cursor: pointer;
 	opacity: 0.7;
 }
@@ -283,6 +288,9 @@ body{
 	margin-right: 20px;
 	height: 120px;
 }
+.booking li:nth-child(5){
+		width: 5%;
+	}
 .booking li:last-child{
 	display: flex;
 	justify-content: center;
@@ -309,8 +317,8 @@ body{
 	height: 40px;
 	width: 100%;
 	margin-top: 52px;
-	background-color: black;
-	color: white;
+	background-color: var(--darkText);
+	color: var(--lightText);
 	border-radius: 5px;
 	border: none;
 }
@@ -324,7 +332,7 @@ body{
 
 /*WELCOME*/
 .welcome{
-	/*background-image: url(../img/light-wall.jpg);
+	/*background-image: var(--lightBG);
 	background-repeat: repeat;
 	border: 1px solid transparent;*/
 }
@@ -360,7 +368,7 @@ body{
 	height: 100%;
 	box-sizing: border-box;
 	position: absolute;
-	border: 15px solid white;
+	border: 15px solid var(--lightText);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -385,8 +393,8 @@ body{
 .welcome .detail .more input{
 	width: 15%;
 	border: 2px solid transparent;
-	background-color: black;
-	color: white;
+	background-color: var(--darkText);
+	color: var(--lightText);
 	font-size: 16px;
 	height: 40px;
 	line-height: 40px;
@@ -396,9 +404,9 @@ body{
 	font-weight: bold;
 }
 .welcome .detail .more input:hover{
-	border: 2px solid black;
-	background-color: white;
-	color: black;
+	border: 2px solid var(--darkText);
+	background-color: var(--lightText);
+	color: var(--darkText);
 	cursor: pointer;
 	transition: all 0.5s;
 }
@@ -420,14 +428,14 @@ body{
 	font-size: 60px;
 	text-align: center;
 	margin-top: 10%;
-	color: white;
+	color: var(--lightText);
 }
 .introduce .detail{
 	width: 100%;
 	font-size: 30px;
 	text-align: center;
 	margin-top: 20px;
-	color: white;
+	color: var(--lightText);
 }
 .introduce .book-btn{
 	width: 100%;
@@ -442,13 +450,13 @@ body{
 	line-height: 40px;
 	border: 2px solid transparent;
 	border-radius: 5px;
-	background-color: white;
-	color: black;
+	background-color: var(--lightText);
+	color: var(--darkText);
 	text-transform: uppercase;
 	font-weight: bold;
 }
 .introduce .book-btn input:hover{
-	color: white;
+	color: var(--lightText);
 	background-color: #d7b38c;
 	transition: all 0.5s;
 	cursor: pointer;
@@ -505,7 +513,7 @@ body{
 	position: absolute;
 	left: 100%;
 	bottom: 5px;
-	background-color: white;
+	background-color: var(--lightText);
 	z-index: 2;
 	animation-name: DINING-INFO;
 	animation-duration: 1s;
@@ -557,12 +565,12 @@ body{
 	margin-top: 30px;
 }
 .stats .info .itemBox{
-	border: 15px solid white;
+	border: 15px solid var(--lightText);
 	overflow: hidden;
 	position: relative;
 	height: 400px;
 	cursor: pointer;
-	background-color: white;
+	background-color: var(--lightText);
 }
 .stats .info .itemBox:hover{
 	background-color: #f0f0f0;
@@ -606,7 +614,7 @@ body{
 
 /*BLOGS*/
 .blogs{
-	background-image: url(../img/dark-wall.jpg);
+	background-image: var(--darkBG);
 	background-repeat: repeat;
 	border-top: 1px solid transparent;
 	padding-bottom: 50px;
@@ -616,7 +624,7 @@ body{
 	font-size: 50px;
 	width: 100%;
 	text-align: center;
-	color: white;
+	color: var(--lightText);
 }
 .blogs .icon-title{
 	width: 100%;
@@ -628,11 +636,11 @@ body{
 	margin-top: 30px;
 }
 .blogs .info .itemBox{
-	border: 15px solid white;
+	border: 15px solid var(--lightText);
 	overflow: hidden;
 	position: relative;
 	cursor: pointer;
-	background-color: white;
+	background-color: var(--lightText);
 }
 .blogs .info .itemBox:hover{
 	
@@ -690,7 +698,7 @@ body{
 }
 .blogs .info .itemBox .item .more a{
 	text-decoration: none;
-	color: black;
+	color: var(--darkText);
 	font-size: 14px;
 }
 .blogs .info .itemBox .item .more a:hover{
@@ -706,8 +714,8 @@ body{
 .blogs .info .blog-btn input{
 	width: 15%;
 	border: 2px solid transparent;
-	background-color: black;
-	color: white;
+	background-color: var(--darkText);
+	color: var(--lightText);
 	font-size: 16px;
 	height: 40px;
 	line-height: 40px;
@@ -719,7 +727,7 @@ body{
 .blogs .info .blog-btn input:hover{
 	border: 2px solid #d7b38c;
 	background-color: #d7b38c;
-	color: white;
+	color: var(--lightText);
 	cursor: pointer;
 	transition: all 0.5s;
 }
@@ -741,7 +749,7 @@ body{
 	width: 100%;
 	font-size: 60px;
 	text-align: center;
-	color: white;
+	color: var(--lightText);
 }
 .introduce2 .detail{
 	margin-top: 10%;
@@ -763,13 +771,13 @@ body{
 	line-height: 40px;
 	border: 2px solid transparent;
 	border-radius: 5px;
-	background-color: white;
-	color: black;
+	background-color: var(--lightText);
+	color: var(--darkText);
 	text-transform: uppercase;
 	font-weight: bold;
 }
 .introduce2 .book-btn input:hover{
-	color: white;
+	color: var(--lightText);
 	background-color: #d7b38c;
 	transition: all 0.5s;
 	cursor: pointer;
@@ -801,7 +809,7 @@ body{
 }
 .review .guest .review-slide .item{
 	height: 300px;
-	background-color: white;
+	background-color: var(--lightText);
 	width: 100%;
 }
 .review .guest .review-slide .item:focus{
@@ -904,7 +912,7 @@ body{
 	padding-bottom: 20px;
 }
 .check .check-items .ad{
-	color: white;
+	color: var(--lightText);
 	font-size: 40px;
 	width: 100%;
 }
@@ -926,12 +934,12 @@ body{
 .check .check-items button a{
 	text-align: center;
 	text-decoration: none;
-	color: black;
+	color: var(--darkText);
 	font-weight: bold;
 	text-transform: uppercase;
 }
 .check .check-items button a:hover{
-	color: white;
+	color: var(--lightText);
 }
 
 
@@ -940,13 +948,13 @@ body{
 
 /*FOOTER*/
 .footer{
-	background-image: url(../img/dark-wall.jpg);
+	background-image: var(--darkBG);
 	background-repeat: repeat;
 	border-top: 1px solid transparent;
 }
 .footer .info{
 	margin-top: 50px;
-	color: white;
+	color: var(--lightText);
 	padding-bottom: 50px;
 }
 .footer .info .item{
@@ -969,16 +977,17 @@ body{
 	background-color: rgb(255,255,255,0.1);
 	border: none;
 	border-radius: 5px;
-	color: white;
+	color: var(--lightText);
 }
 .footer .info .contact textarea{
 	width: 100%;
 	resize: vertical;
+	min-height: 50px;
 	max-height: 300px;
 	background-color: rgb(255,255,255,0.1);
 	border: none;
 	border-radius: 5px;
-	color: white;
+	color: var(--lightText);
 }
 .footer .info .contact .policy{
 	margin-top: 10px;
@@ -1014,10 +1023,10 @@ body{
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: bold;
-	color: black;
+	color: var(--darkText);
 }
 .footer .info .contact .policy button:hover{
-	color: white;
+	color: var(--lightText);
 	background-color: #d7b38c;
 	transition: all 0.5s;
 	cursor: pointer;
@@ -1034,7 +1043,7 @@ body{
 	color: #d7b38c;
 }
 .footer .info .category li a:hover{
-	color: white;
+	color: var(--lightText);
 }
 .footer .info .category .icon a{
 	color: rgb(255,255,255,0.7);
@@ -1048,12 +1057,12 @@ body{
 .footer .info .direction .map{
 	width: 90%;
 	height: 300px;
-	border: 10px solid white;
+	border: 10px solid var(--lightText);
 	position: relative;
 }
 .footer .info .direction .address{
 	font-size: 16px;
-	color: white;
+	color: var(--lightText);
 	width: 100%;
 	margin-top: 10px;
 }
@@ -1064,7 +1073,7 @@ body{
 }
 .footer .copyright p{
 	line-height: 100px;
-	color: white;
+	color: var(--lightText);
 	font-size: 16px;
 }
 .footer .copyright p span{
@@ -1074,3 +1083,39 @@ body{
 
 
 /*END FOOTER*/
+
+
+
+/*RESPONSIVE*/
+
+@media all and (max-width: 1200px){
+	.booking li{
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+}
+
+@media all and (max-width: 1024px){
+	.header-box .header-info{
+		display: none;
+	}
+	.banner{
+		margin-top: -31px;
+	}
+}
+
+@media all and (max-width: 992px){
+
+}
+
+@media all and (max-width: 768px){
+	
+}
+
+@media all and (max-width: 576px){
+	
+}
+
+@media all and (max-width: 480px){
+	
+}
