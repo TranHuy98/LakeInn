@@ -14,6 +14,15 @@ $(document).ready(function(){
    });
 });
 
+// resMenu
+$(document).ready(function(){
+  $('#resMenuLogo').click(function(){
+    $('.res-header').css('display','block');
+  });
+});
+
+
+
 //banner slider
 $(document).ready(function(){
   $('.banner-slide').slick({
@@ -62,5 +71,21 @@ $(document).ready(function(){
     dots: true,
     slideToShow: 1,
     slideToScroll: 1,
+  });
+});
+
+//read policy
+$(function(){
+  $('#check-policy').click(function(){
+    if ($(this).is(':checked')){
+      $('.condition-policy').css('opacity','1');
+      $('.condition-policy').css('pointer-events','all');
+      $('.condition-policy').css('cursor','pointer');
+    }
+    else{
+      $('.condition-policy').css('opacity','0.7');
+      $('.condition-policy').css('pointer-events','none');
+      $('.condition-policy').css('cursor','default');
+    }
   });
 });

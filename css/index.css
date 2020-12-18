@@ -82,6 +82,11 @@ body{
 	background-image: var(--darkBG);
 	background-repeat: repeat-x;
 }
+#resMenuLogo{
+	opacity: 0;
+	user-select: none;
+	pointer-events: none;
+}
 .header-box .header img{
 	height: 40px;
 	margin-top: 40px;
@@ -197,6 +202,42 @@ body{
 /*end dropchild*/
 
 /*END HEADER*/
+
+/*RES HEADER*/
+.res-header{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgb(0,0,0,0.4);
+	z-index: 4;
+	/*display: none;*/
+}
+.res-header .res-menu .res-menu-item{
+	height: 50px;
+	line-height: 50px;
+	width: 100%;
+}
+.res-header .res-menu .res-menu-item:hover{
+	border: 2px solid #d7b38c;
+}
+.res-header .res-menu .res-menu-item a{
+	margin-left: 20px;
+	text-decoration: none;
+	color: white;
+	font-size: 14px;
+}
+.res-header .res-menu .res-menu-item:hover a{
+	color: #d7b38c;
+}
+
+
+
+
+/*END RES HEADER*/
+
+
 
 /*BANNER*/
 .banner{
@@ -1024,12 +1065,14 @@ body{
 	text-transform: uppercase;
 	font-weight: bold;
 	color: var(--darkText);
+	user-select: none;
+	pointer-events: none;
+	opacity: 0.7;
 }
 .footer .info .contact .policy button:hover{
 	color: var(--lightText);
 	background-color: #d7b38c;
 	transition: all 0.5s;
-	cursor: pointer;
 }
 .footer .info .contact .policy button:focus{
 	outline: none;
@@ -1095,12 +1138,34 @@ body{
 	}
 }
 
-@media all and (max-width: 1024px){
+@media all and (max-width: 1023px){
 	.header-box .header-info{
 		display: none;
 	}
 	.banner{
 		margin-top: -31px;
+	}
+	.header-box .header .forResLogo{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		/*border: 1px solid yellow;*/
+	}
+	.header-box .header .menu{
+		display: none;
+	}
+	.header-box .header img{
+		transform: scale(1.2);
+	}
+	#resMenuLogo{
+		opacity: 1;
+		pointer-events: all;
+		cursor: pointer;
+		font-size: 20px;
+		color: white;
+		position: absolute;
+		left: 0;
+		top: 50px;
 	}
 }
 
@@ -1112,10 +1177,20 @@ body{
 	
 }
 
-@media all and (max-width: 576px){
-	
+@media all and (max-width: 575px){
+	#resMenuLogo{
+		left: 30px;
+	}
 }
 
 @media all and (max-width: 480px){
-	
+	#resMenuLogo{
+		right: 30px;
+	}
+}
+
+@media all and (max-width: 375px){
+	.header-box .header img{
+		/*transform: scale(1.2);*/
+	}
 }
