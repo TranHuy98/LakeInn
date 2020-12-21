@@ -75,6 +75,23 @@ body{
 .header-box .header-info .icon a:hover{
 	color: var(--lightText);
 }
+.fixed-header{
+	position: fixed;
+	width: 100%;
+	z-index: 3;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	animation-name: HEADER-DOWN;
+	animation-duration: 0.5s;
+}
+@keyframes HEADER-DOWN{
+	0%{
+		top: -120px;
+	}
+	100%{
+		top: 0;
+	}
+}
 .header-box .header{
 	height: 120px;
 	background-image: var(--darkBG);
@@ -1196,12 +1213,13 @@ body{
 		display: none;
 	}
 	.header-box .header{
-		/*position: fixed;
+		position: fixed;
 		top: 0;
-		left: 0;*/
+		width: 100%;
+		z-index: 3;
 	}
 	.banner{
-		margin-top: -31px;
+		margin-top: -30px;
 	}
 	.header-box .header .forResLogo{
 		display: flex;
@@ -1298,9 +1316,15 @@ body{
 	
 }
 
-@media all and (max-width: 480px){
+@media all and (max-width: 455px){
 	#resMenuLogo{
 		right: 30px;
+	}
+	.introduce2{
+		height: 580px;
+	}
+	.introduce2 .title{
+		line-height: 70px;
 	}
 }
 

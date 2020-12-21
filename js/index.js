@@ -14,6 +14,19 @@ $(document).ready(function(){
    });
 });
 
+//header scroll fixed
+$(document).ready(function(){
+  $(window).scroll(function(){
+    var pos = $('html,body').scrollTop();
+    if(pos>150){
+      $('.header').addClass('fixed-header');
+    }
+    else{
+      $('.header').removeClass('fixed-header');
+    }
+  });
+});
+
 
 //banner slider
 $(document).ready(function(){
@@ -85,7 +98,7 @@ $(function(){
 
 
 
-// resheader
+// resheader button animation
 // header button animation
 // $(document).ready(function(){
 //   $('#box1').click(function(){
