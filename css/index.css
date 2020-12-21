@@ -7,11 +7,11 @@
 
 
 *{
-	font-family: 'Roboto Slab', se	font-size: 20px;
-rif;
+	font-family: 'Roboto Slab', serif;
 }
 body{
 	background-image: var(--lightBG);
+	/*background-image: url(../img/greenBG.jpg);*/
 	background-repeat: repeat;
 }
 .backToTop{
@@ -39,7 +39,6 @@ body{
 /*HEADER*/
 .header-box{
 	height: 150px;
-	/*width: 100%;*/
 }
 .header-box .header-info{
 	height: 30px;
@@ -203,6 +202,7 @@ body{
 	position: absolute;
 	left: 5%;
 	top: 50px;
+	z-index: 20;
 }
 
 /*END HEADER*/
@@ -290,14 +290,14 @@ body{
 
 /*BANNER*/
 .banner{
-	position: relative;
 	margin-top: 0px;
+	position: relative;
+
 }
 .banner .banner-slide{
 	
 }
 .banner .banner-item{
-	width: 100%;
 	height: 800px;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -309,17 +309,21 @@ body{
 }
 .banner-slide .title{
 	margin-top: 15%;
-	font-size: 80px;
+	font-size: 75px;
+	line-height: 90px;
 	color: var(--lightText);
 	letter-spacing: 2px;
-	width: 100%;
+	width: 90%;
+	margin-left: 5%;
 	text-align: center;
 }
 .banner-slide .description{
-	margin-top: 0px;
+	margin-top: 15px;
 	font-size: 20px;
+	line-height: 30px;
 	color: var(--lightText);
-	width: 100%;
+	width: 90%;
+	margin-left: 5%;
 	text-align: center;
 }
 .prev-banner-box{
@@ -357,77 +361,61 @@ body{
 	opacity: 1;
 }
 .banner .booking{
-	width: 90%;
 	position: absolute;
 	top: 600px;
-	height: 120px;
 	left: 5%;
+	width: 90%;
+	height: 120px;
 	z-index: 2;
-	background-color: #faf9f8;
-	border-top: 2px solid #d7b38c;
 }
-.booking form{
+.banner .booking .item{
+	margin: 0 !important;
+	padding: 0 !important;
+	height: 120px;
+	background-color: #faf9f8;
+	border-top: 5px solid #d7b38c;
+}
+.banner .booking .item p{
+	width: 100%;
+	text-align: center;
+	margin-top: 10px;
+	font-size: 16px;
+	height: 20px;
+	line-height: 20px;
+}
+.banner .booking .item p span{
+	color: red;
+}
+.banner .booking .item .infos{
+	width: 100%;
+	height: 40px;
+	margin-top: 10px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-.booking li{
-	display: inline-block;
-	list-style-type: none;
-	margin-left: 20px;
-	margin-right: 20px;
-	height: 120px;
-}
-.booking li:nth-child(5){
-		width: 5%;
-	}
-.booking li:last-child{
-	display: flex;
-	justify-content: center;
-}
-.booking li p{
-	line-height: 40px;
-	font-size: 14px;
+.banner .booking .item .infos .criteria{
+	width: 90%;
 	height: 40px;
-	margin-top: 5px;
-	width: 100%;
-	overflow: hidden;
-}
-.booking li p span{
-	color: red;
-}
-.booking li .infos{
-	height: 40px;
-	margin-top: -10px;
-	width: 100%;
-	border-radius: 5px;
 	border: 1px solid #ccc;
-}
-.booking li .infos:focus{
-	outline: none;
-}
-.booking .submit-btn{
-	height: 40px;
-	width: 100%;
-	margin-top: 52px;
-	background-color: var(--darkText);
-	color: var(--lightText);
 	border-radius: 5px;
-	border: none;
 }
-.booking .submit-btn:hover{
+.banner .booking .item .infos .sub-btn{
+	background-color: black;
+	color: white;
+}
+.banner .booking .item .infos .sub-btn:hover{
 	background-color: #d7b38c;
 	cursor: pointer;
 	transition: all 0.5s;
 }
 
+
 /*END BANNER*/
 
 /*WELCOME*/
 .welcome{
-	/*background-image: var(--lightBG);
-	background-repeat: repeat;
-	border: 1px solid transparent;*/
+	
 }
 .welcome .words{
 	margin-top: 50px;
@@ -508,10 +496,11 @@ body{
 
 /*INTRODUCE ROOMS*/
 .introduce{
+	width: 100%;
 	height: 500px;
 	background-image: url(../img/booking-big-image.jpg);
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center center;
 	background-size: cover;
 	background-attachment: fixed;
 	border-top: 1px solid transparent;
@@ -795,6 +784,7 @@ body{
 }
 .blogs .info .itemBox .item .more a:hover{
 	color: #d7b38c;
+	font-weight: bold;
 }
 .blogs .info .blog-btn{
 	width: 100%;
@@ -1023,6 +1013,7 @@ body{
 	max-height: 60px;
 	max-height: 100px;
 	border-radius: 5px;
+	cursor: pointer;
 }
 .check .check-items button a{
 	font-size: 14px;
@@ -1032,7 +1023,7 @@ body{
 	font-weight: bold;
 	text-transform: uppercase;
 }
-.check .check-items button a:hover{
+.check .check-items button:hover a{
 	color: var(--lightText);
 }
 
@@ -1095,12 +1086,11 @@ body{
 	align-items: center;
 }
 .footer .info .contact .policy .words{
-	float: right;
+	float: left;
 	width: 95%;
 }
 .footer .info .contact .policy .words p{
 	margin-left: 15px;
-	margin-right: 15px;
 	line-height: 25px;
 	font-size: 16px;
 }
@@ -1182,18 +1172,33 @@ body{
 
 
 
+
 /*RESPONSIVE*/
 
 @media all and (max-width: 1200px){
-	.booking li{
-		margin-left: 10px;
-		margin-right: 10px;
+	
+}
+
+@media all and (max-width: 1199px){
+	.banner .booking{
+		height: 240px;
+	}
+	.welcome .words{
+		margin-top: 100px;
+	}
+	.banner .booking .item-lg{
+		border: none;
 	}
 }
 
 @media all and (max-width: 1023px){
 	.header-box .header-info{
 		display: none;
+	}
+	.header-box .header{
+		/*position: fixed;
+		top: 0;
+		left: 0;*/
 	}
 	.banner{
 		margin-top: -31px;
@@ -1202,7 +1207,6 @@ body{
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		/*border: 1px solid yellow;*/
 	}
 	.header-box .header .menu{
 		display: none;
@@ -1231,6 +1235,18 @@ body{
 	}
 }
 
+@media all and (max-width: 991px){
+	.banner .booking{
+		height: 360px;
+	}
+	.welcome .words{
+		margin-top: 220px;
+	}
+	.banner .booking .item-md{
+		border: none;
+	}
+}
+
 @media all and (max-width: 768px){
 	.booking{
 		font-size: 12px !important;
@@ -1243,6 +1259,26 @@ body{
 	}
 	.blogs .info .itemBox .item .img{
 		height: 150px;
+	}
+}
+@media all and (max-width: 767px){
+	.footer .info .category{
+		margin-top: 50px;
+	}
+	.footer .info .direction{
+		margin-top: 50px;
+	}
+	.banner .booking{
+		height: 720px;
+	}
+	.welcome .words{
+		margin-top: 580px;
+	}
+	.banner .booking .item-sm{
+		border: none;
+	}
+	.stats .info .itemBox{
+		height: 280px;
 	}
 }
 
@@ -1258,6 +1294,10 @@ body{
 	}
 }
 
+@media all and (max-width: 575px){
+	
+}
+
 @media all and (max-width: 480px){
 	#resMenuLogo{
 		right: 30px;
@@ -1266,6 +1306,10 @@ body{
 
 @media all and (max-width: 375px){
 	.header-box .header img{
-		/*transform: scale(1.2);*/
+		
 	}
+}
+
+@media all and (max-width: 320px){
+	
 }

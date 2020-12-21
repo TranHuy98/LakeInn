@@ -36,8 +36,8 @@ $(document).ready(function(){
   $('.dining-slide').slick({
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 2000,
-    speed: 500,
+    autoplaySpeed: 5000,
+    speed: 5000,
     fade: true,
     cssEase: 'linear',
     prevArrow: '.prevBanner',
