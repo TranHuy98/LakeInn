@@ -6,7 +6,38 @@
 <body>
 	<style type="text/css">
 		
+		/*RES HEADER*/
+.res-header{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgb(0,0,0,0.4);
+	z-index: 4;
+	/*display: none;*/
+}
+.res-header .res-menu .res-menu-item{
+	line-height: 50px;
+	width: 100%;
+}
+.res-header .res-menu .res-menu-item:hover{
+	border: 2px solid #d7b38c;
+}
+.res-header .res-menu .res-menu-item a{
+	margin-left: 20px;
+	text-decoration: none;
+	color: white;
+	font-size: 14px;
+}
+.res-header .res-menu .res-menu-item:hover a{
+	color: #d7b38c;
+}
 
+
+
+
+/*END RES HEADER*/
 
 
 	</style>
@@ -14,7 +45,46 @@
 	<div class="html-code">
 		
 
-
+		<!-- res header -->
+	<div class="res-header">
+		<div class="row">
+			<div class="col-4 res-menu" style="background-color: #1d1a1a; width: 100%; height: 100vh;">
+				<div class="row">
+					<div class="col-12 res-menu-item">
+						<div class="res-title" style="border: 1px solid blue;">
+							<a href="#" class="item-title">Home</a>
+						</div>
+						<div class="row" style="border: 1px solid yellow; width: 100%; float: right;">
+							<div class="col-12"><a href="#">Home 1</a></div>
+							<div class="col-12"><a href="#">Home 2</a></div>
+						</div>
+					</div>
+					<div class="col-12 res-menu-item">
+						<a href="#">Features</a>
+						<div class="row" style="border: 1px solid yellow; width: 100%; float: right;">
+							<div class="col-12">
+								<a href="#">Page</a>
+								<div class="row" style="border: 1px solid red; width: 100%; float: right;">
+									<div class="col-12"><a href="#">Teams</a></div>
+									<div class="col-12"><a href="#">Members</a></div>
+									<div class="col-12"><a href="#">Promotion</a></div>
+								</div>
+							</div>
+							<div class="col-12"><a href="#">Home 2</a></div>
+						</div>
+					</div>
+					<div class="col-12 res-menu-item"><a href="#">Rooms & Rates</a></div>
+					<div class="col-12 res-menu-item"><a href="#">Blog</a></div>
+					<div class="col-12 res-menu-item"><a href="#">About</a></div>
+					<div class="col-12 res-menu-item"><a href="#">Contact</a></div>
+				</div>
+			</div>
+			<div class="col-8">
+				
+			</div>
+		</div>
+	</div>
+	<!-- end res header -->
 
 
 

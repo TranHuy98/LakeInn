@@ -14,14 +14,6 @@ $(document).ready(function(){
    });
 });
 
-// resMenu
-$(document).ready(function(){
-  $('#resMenuLogo').click(function(){
-    $('.res-header').css('display','block');
-  });
-});
-
-
 
 //banner slider
 $(document).ready(function(){
@@ -89,3 +81,69 @@ $(function(){
     }
   });
 });
+
+
+
+
+// resheader
+// header button animation
+// $(document).ready(function(){
+//   $('#box1').click(function(){
+//     $('#box3').css('display','none');
+//     $('#box1').css('display','none');
+//     $('#box2').css('display','block');
+//     $('.hidden-drop-menu').slideUp(500);
+//   });
+// });
+// $(document).ready(function(){
+//   $('#box2').click(function(){
+//     $('#box3').css('display','none');
+//     $('#box2').css('display','none'); 
+//     $('#box1').css('display','block');
+//     $('.hidden-drop-menu').slideDown(500);
+//   });
+// });
+// $(document).ready(function(){
+//   $('#box3').click(function(){
+//     $('#box3').css('display','none');
+//     $('#box2').css('display','none'); 
+//     $('#box1').css('display','block');
+//     $('.hidden-drop-menu').slideDown(500);
+//   });
+// });
+$(document).ready(function(){
+  $('#resMenuLogo').click(function(){
+    $('.resHeader').slideToggle(500);
+  });
+});
+//grand child menu
+$(document).ready(function(){
+  $('.pre-hid-child').click(function(){
+    $(this).parent().find('.grandchild-menu').slideToggle(500);
+  });
+});
+
+$(document).ready(function(){
+  $('.pre-hid-child').click(function(){
+    $(this).parent().find('.grand-child-menu').slideToggle(500);
+    $(this).parent().find('span').toggleClass('button-rotate');
+  });
+});
+
+//toggle each item of res menu
+$(document).ready(function(){
+  $('.pre-hid').click(function(){
+    $('.each').slideUp(300);
+    $('.pre-hid').find('i').removeClass('fa fa-angle-down').addClass('fa fa-angle-up');
+    if($(this).parent().find('.child-menu').css('display') == 'none'){
+      $(this).parent().find('.child-menu').slideDown(300);
+      $(this).parent().find('i').removeClass('fa fa-angle-down').addClass('fa fa-angle-up');
+    }
+    else{
+      $(this).parent().find('.child-menu').slideUp(300);
+      $(this).parent().find('i').removeClass('fa fa-angle-up').addClass('fa fa-angle-down');
+    }
+  });
+});
+
+

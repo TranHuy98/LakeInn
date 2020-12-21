@@ -14,7 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-datepicker3.css">
 	<link rel="stylesheet" type="text/css" href="css/flaticon.css">
-	<link rel="icon" type="image/png" href="img/icon.jpg">
+	<link rel="icon" type="image/png" href="img/icon.svg">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
 </head>
@@ -64,7 +64,7 @@
 							<div class="drop-menu">
 								<div class="col-12 item first">
 									<a href="#">Pages<span><i class="fa fa-angle-right"></i></span></a>
-									<div class="drop-child-menu">
+									<div class="drop-child-menu each">
 										<div class="col-12 item"><a href="#">About</a></div>
 										<div class="col-12 item"><a href="#">Team</a></div>
 										<div class="col-12 item"><a href="#">Members</a></div>
@@ -87,14 +87,14 @@
 								<div class="col-12 item first"><a href="#">Classic</a></div>
 								<div class="col-12 item">
 									<a href="#">Mansory<span><i class="fa fa-angle-right"></i></span></a>
-									<div class="drop-child-menu">
+									<div class="drop-child-menu each">
 										<div class="col-12 item"><a href="#">Mansory columns 2</a></div>
 										<div class="col-12 item"><a href="#">Mansory columns 3</a></div>
 									</div>
 								</div>
 								<div class="col-12 item">
 									<a href="#">Portfolio<span><i class="fa fa-angle-right"></i></span></a>
-									<div class="drop-child-menu">
+									<div class="drop-child-menu each">
 										<div class="col-12 item"><a href="#">Portfolio columns 2</a></div>
 										<div class="col-12 item"><a href="#">Portfolio columns 3</a></div>
 									</div>
@@ -121,25 +121,132 @@
 	</div>
 	<!-- end header -->
 
-	<!-- res header -->
-	<div class="res-header">
+	<!-- resHeader -->
+	<div class="resHeader" id="resHeader">
 		<div class="row">
-			<div class="col-4 res-menu" style="background-color: #1d1a1a; width: 100%; height: 100vh;">
-				<div class="row">
-					<div class="col-12 res-menu-item"><a href="#">Home</a></div>
-					<div class="col-12 res-menu-item"><a href="#">Features</a></div>
-					<div class="col-12 res-menu-item"><a href="#">Rooms & Rates</a></div>
-					<div class="col-12 res-menu-item"><a href="#">Blog</a></div>
-					<div class="col-12 res-menu-item"><a href="#">About</a></div>
-					<div class="col-12 res-menu-item"><a href="#">Contact</a></div>
+			<div class="hidden-drop-menu" id="dropMenu">
+				<div class="col-12 itemBox">
+					<div class="pre-hid">Home <span><i class="fa fa-angle-down"></i></span></div>
+					<div class="hid-item container">
+						<div class="row">
+							<div class="child-menu each">
+								<div class="col-12">
+									<div class="hid-child"><a href="#">Home 1</a></div>
+								</div>
+								<div class="col-12">
+									<div class="hid-child"><a href="index2.html">Home 2</a></div>
+								</div>
+								<div class="col-12">
+									<div class="hid-child"><a href="#">Home 3</a></div>
+								</div>
+								<div class="col-12">
+									<div class="hid-child"  ><a href="#">Home 4</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>
-			<div class="col-8">
-				
+				<div class="col-12 itemBox">
+					<div class="pre-hid">Tours <span><i class="fa fa-angle-down"></i></span></div>
+					<div class="hid-item container">
+						<div class="row">
+							<div class="child-menu each">
+								<div class="col-12">
+									<div class="hid-child">
+										<a href="#">tours grid</a>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="hid-child"><a href="tour-list.html">tours list</a></div>
+								</div>
+								<div class="col-12">
+									<div class="hid-child pre-hid-child"  >tours items <span><i class="fa fa-angle-down"></i></span></div>
+									<div class="hid-item container"  >
+										<div class="row">
+											<div class="grandchild-menu each">
+												<div class="col-12">
+													<div class="hid-child">
+														<a href="tour-item.html">tours item</a>
+													</div>
+												</div>
+												<div class="col-12">
+													<div class="hid-child"><a href="#">tours item 2</a></div>
+												</div>
+												<div class="col-12">
+													<div class="hid-child"  ><a href="#">tours item 3</a></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 itemBox  ">
+					<div class="pre-hid">destination <span><i class="fa fa-angle-down"></i></span></div>
+					<div class="hid-item container">
+						<div class="row">
+							<div class="child-menu each">
+								<div class="col-12">
+									<div class="hid-child"><a href="destination-grid.html">destination grid</a></div>
+								</div>
+								<div class="col-12">
+									<div class="hid-child"><a href="#">destination mansory</a></div>
+								</div>
+								<div class="col-12">
+									<div class="hid-child"  ><a href="destination-item.html">destination item</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 itemBox  ">
+					<div class="pre-hid">blog <span><i class="fa fa-angle-down"></i></span></div>
+					<div class="hid-item container">
+						<div class="row">
+							<div class="child-menu each">
+								<div class="col-12">
+									<div class="hid-child"><a href="#">blog list</a></div>
+								</div>
+								<div class="col-12">
+									<div class="hid-child"><a href="blog-grid.html">blog grid</a></div>
+								</div>
+								<div class="col-12">
+									<div class="hid-child"  ><a href="blog-single.html">blog single</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 itemBox  ">
+					<div class="pre-hid">Pages <span><i class="fa fa-angle-down"></i></span></div>
+					<div class="hid-item container">
+						<div class="row">
+							<div class="child-menu each">
+								<div class="col-12">
+									<div class="hid-child"><a href="about-us.html">about us</a></div>
+								</div>
+								<div class="col-12">
+									<div class="hid-child"  ><a href="#">404 page</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 itemBox  ">
+					<div class="pre-hid hid-item" style="color: white;"><a href="contact.html">Contact</a></div>
+				</div>
+				<div class="col-12 itemBox">
+					<div class="pre-hid hid-item">
+						<i class="far fa-user-circle"></i>
+						<i class="fas fa-search"></i>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-	<!-- end res header -->
+	<!-- end resHeader -->
 
 	<!-- carousel banner -->
 	<div class="container-fluid banner">
@@ -177,7 +284,7 @@
 					<p>Email<span>*</span></p>
 					<input type="email" name="" class="infos">
 				</li>
-				<li style="">
+				<li>
 					<p>Room Type<span>*</span></p>
 					<select class="infos">
 						<option value="" selected disabled hidden>Select Type</option>
@@ -219,15 +326,15 @@
 		</div>
 		<div class="container images">
 			<div class="row">
-				<div class="col-8 itemBox" style="height: 400px;">
+				<div class="col-xl-8 col-lg-12 col-md-12 itemBox" style="height: 400px;">
 					<div class="item" style="background-image: url(img/greeting-img1.jpg);"></div>
 				</div>
-				<div class="col-4">
+				<div class="col-xl-4 col-lg-12 col-md-12">
 					<div class="row">
-						<div class="col-12 itemBox" style="height: 200px;">
+						<div class="col-xl-12 col-lg-6 col-md-12 itemBox" style="height: 200px;">
 							<div class="item" style="background-image: url(img/greeting-img2.jpg);"></div>
 						</div>
-						<div class="col-12 itemBox" style="height: 200px;">
+						<div class="col-xl-12 col-lg-6 col-md-12 itemBox" style="height: 200px;">
 							<div class="item" style="background-image: url(img/greeting-img3.jpg);"></div>
 						</div>
 					</div>
@@ -312,7 +419,7 @@
 		</div>
 		<div class="container info">
 			<div class="row">
-				<div class="col-3">
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
 					<div class="itemBox">
 						<div class="item">
 						<p class="number">12</p>
@@ -321,16 +428,16 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-3">
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
 					<div class="itemBox">
 						<div class="item">
-						<p class="number">36</p>
+						<p class="number">43</p>
 						<div class="slice"></div>
 						<p class="criteria">Dining Options</p>
 						</div>
 					</div>
 				</div>
-				<div class="col-3">
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
 					<div class="itemBox">
 						<div class="item">
 						<p class="number">854</p>
@@ -339,10 +446,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-3">
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
 					<div class="itemBox">
 						<div class="item">
-						<p class="number">9</p>
+						<p class="number">9.5</p>
 						<div class="slice"></div>
 						<p class="criteria">Average Rating</p>
 						</div>
@@ -363,7 +470,7 @@
 		</div>
 		<div class="container info">
 			<div class="row">
-				<div class="col-3">
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
 					<div class="itemBox">
 						<div class="item">
 							<div class="img" style="background-image: url(img/dining1.jpg);"></div>
@@ -381,7 +488,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-3">
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
 					<div class="itemBox">
 						<div class="item">
 							<div class="img" style="background-image: url(img/dining1.jpg);"></div>
@@ -399,7 +506,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-3">
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
 					<div class="itemBox">
 						<div class="item">
 							<div class="img" style="background-image: url(img/dining1.jpg);"></div>
@@ -417,7 +524,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-3">
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
 					<div class="itemBox">
 						<div class="item">
 							<div class="img" style="background-image: url(img/dining1.jpg);"></div>
@@ -606,7 +713,6 @@
 	<!-- JS -->
 	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
-	<script type="text/javascript" src="js/header-footer.js"></script>
 	<script type="text/javascript" src="slick/slick.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap-datepicker.min.js"></script>
 	<script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
