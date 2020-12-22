@@ -33,7 +33,7 @@ $(document).ready(function(){
   $('.banner-slide').slick({
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     speed: 500,
     fade: true,
     cssEase: 'linear',
@@ -49,8 +49,8 @@ $(document).ready(function(){
   $('.dining-slide').slick({
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 5000,
-    speed: 5000,
+    autoplaySpeed: 2000,
+    speed: 500,
     fade: true,
     cssEase: 'linear',
     prevArrow: '.prevBanner',

@@ -325,11 +325,10 @@ body{
 	outline: none;
 }
 .banner-slide .title{
-	margin-top: 15%;
+	margin-top: 20%;
 	font-size: 75px;
 	line-height: 90px;
 	color: var(--lightText);
-	letter-spacing: 2px;
 	width: 90%;
 	margin-left: 5%;
 	text-align: center;
@@ -1263,6 +1262,12 @@ body{
 	.banner .booking .item-md{
 		border: none;
 	}
+	.blogs .info .itemBox{
+		margin-top: 30px;
+	}
+	.blogs .info .itemBox .item .img{
+		height: 150px;
+	}
 }
 
 @media all and (max-width: 768px){
@@ -1272,11 +1277,8 @@ body{
 	.stats .info .itemBox{
 		margin-top: 30px;
 	}
-	.blogs .info .itemBox{
-		margin-top: 30px;
-	}
-	.blogs .info .itemBox .item .img{
-		height: 150px;
+	.resHeader .hidden-drop-menu{
+		width: 45%;
 	}
 }
 @media all and (max-width: 767px){
@@ -1310,6 +1312,9 @@ body{
 	.blogs .info .itemBox{
 		margin-top: 15px;
 	}
+	.resHeader .hidden-drop-menu{
+		width: 60%;
+	}
 }
 
 @media all and (max-width: 575px){
@@ -1328,6 +1333,12 @@ body{
 	}
 }
 
+@media all and (max-width: 425px){
+	.resHeader .hidden-drop-menu{
+		width: 100%;
+	}
+}
+
 @media all and (max-width: 375px){
 	.header-box .header img{
 		
@@ -1335,5 +1346,27 @@ body{
 }
 
 @media all and (max-width: 320px){
-	
+	.review .guest .review-slide .item .guest-info .guest-img{
+		width: 70px;
+		height: 70px;
+		right: 10px;
+	}
+}
+
+@media all and (max-width: 280px){
+	.review .guest .review-slide .item .guest-info .guest-img{
+		width: 60px;
+		height: 60px;
+		right: 5px;
+	}
+	.review .guest .review-slide .item .guest-info .name{
+		line-height: 20px;
+		font-size: 14px;
+		margin-left: -15px;
+	}
+	.review .guest .review-slide .item .guest-info .job{
+		line-height: 20px;
+		font-size: 12px;	
+		margin-left: -15px;
+	}
 }
