@@ -179,7 +179,6 @@ body{
 .header-box .header .menu li .drop-menu .item:hover{
 	background-color: var(--lightText);
 }
-/*dropchild*/
 .header-box .header .menu li .drop-child-menu{
 	color: var(--darkText);
 	position: absolute;
@@ -209,48 +208,221 @@ body{
 .header-box .header .menu li .drop-child-menu .item:hover{
 	background-color: var(--lightText);
 }
-/*end dropchild*/
-#resMenuLogo{
-	opacity: 0;
-	user-select: none;
-	pointer-events: none;
-	font-size: 20px;
-	color: white;
-	position: absolute;
-	left: 5%;
-	top: 50px;
-	z-index: 20;
-}
-
 /*END HEADER*/
 
 
+/*RES-HEADER BUTTON*/
+.header .headerBtn{
+	width: 60px;
+	height: 120px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	pointer-events: none;
+}
+.header .headerBtn .box{
+	width: 30px;
+	height: 24px;
+	position: relative;
+	overflow: hidden;
+}
+.header .headerBtn .line{
+	width: 30px;
+	height: 4px;
+	position: absolute;
+	background-color: white;
+	border-radius: 5px 5px 0 0;
+}
+.header .headerBtn .line1{
+	top: 0;
+	left: 0;
+	animation-fill-mode: forwards;
+	animation-name: ROTATE1;
+	animation-duration: 0.3s;
+	animation-timing-function: linear;
+}
+.header .headerBtn .line2{
+	top: 10px;
+	left: 0;
+	animation-fill-mode: forwards;
+	animation-name: ROTATE2;
+	animation-duration: 0.3s;
+	animation-timing-function: linear;
+}
+.header .headerBtn .line3{
+	top: 20px;
+	left: 0;
+	animation-fill-mode: forwards;
+	animation-name: ROTATE3;
+	animation-duration: 0.3s;
+	animation-timing-function: linear;
+	border-radius: 5px;
+}
+.header .headerBtn .line4{
+	top: 0;
+	left: 0;
+	animation-fill-mode: forwards;
+	animation-name: ROTATE4;
+	animation-duration: 0.3s;
+	animation-timing-function: linear;
+}
+.header .headerBtn .line5{
+	top: 0;
+	left: 0;
+	animation-fill-mode: forwards;
+	animation-name: ROTATE5;
+	animation-duration: 0.3s;
+	animation-timing-function: linear;
+}
+.header .headerBtn .line6{
+	top: 0;
+	left: 0;
+	animation-fill-mode: forwards;
+	animation-name: ROTATE6;
+	animation-duration: 0.3s;
+	animation-timing-function: linear;
+}
+.header .headerBtn .line7{
+	top: 0;
+	left: 0;
+	border-radius: 5px 5px 0 0;
+}
+.header .headerBtn .line8{
+	top: 10px;
+	left: 0;
+	border-radius: 5px 5px 0 0;
+}
+.header .headerBtn .line9{
+	top: 20px;
+	left: 0;
+	border-radius: 5px 5px 0 0;
+}
 
-/*copy res-header*/
+#box1{
+	display: none;
+	cursor: pointer;
+}
+#box2{
+	display: none;
+	cursor: pointer;
+}
+#box3{
+	display: block;
+	cursor: pointer;
+}
+
+/*header button animation*/
+@keyframes ROTATE1{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		top: 10px;
+		transform: rotate(-45deg);
+		border-radius: 5px;
+	}
+}
+@keyframes ROTATE2{
+	0%{
+		transform: rotate(0deg);
+	}
+	50%{
+		top: 10px;
+		left: 30px;
+	}
+	100%{
+		top: 10px;
+		left: 30px;
+		opacity: 0;
+	}
+}
+@keyframes ROTATE3{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		top: 10px;
+		transform: rotate(45deg);
+		border-radius: 5px;
+	}
+}
+@keyframes ROTATE4{
+	100%{
+		top: 0;
+		transform: rotate(0deg);
+	}
+	0%{
+		top: 10px;
+		transform: rotate(-45deg);
+	}
+}
+@keyframes ROTATE5{
+	100%{
+		transform: rotate(0deg);
+		top: 10px;
+		left: 0px;
+		opacity: 1;
+	}
+	50%{
+		top: 10px;
+		left: 30px;
+		opacity: 0;
+	}
+	0%{
+		top: 10px;
+		left: 30px;
+		opacity: 0;
+	}
+}
+@keyframes ROTATE6{
+	100%{
+		top: 20px;
+		transform: rotate(0deg);
+	}
+	0%{
+		top: 10px;
+		transform: rotate(45deg);
+	}
+}
+/*end header button animation*/
+/*END RES-HEADER BUTTON*/
+
+
+/*RES-HEADER*/
 .resHeader{
 	height: 100%;
 	width: 100%;
 	position: fixed;
 	top: 119px;
 	left: 0;
+	right: 0;
+	bottom: 0;
 	background-color: rgb(0,0,0,0.4);
 	z-index: 10;
 	display: none;
 }
 .resHeader .hidden-drop-menu{
 	width: 30%;
-	height: 100%;
+	min-height: 100%;
 	position: fixed;
-	top: 119px;
-	left: 0;
+	display: block;
+	top: 0px;
+	left: 0px;
 	z-index: 15;
 	background-color: #1a1d1d;
 	text-transform: capitalize;
 	font-size: 14px;
+	overflow: hidden;
+	overflow-y: scroll;
 }
 .resHeader .hidden-drop-menu .itemBox{
 	background-color: #1a1d1d;
 	border-bottom: 1px solid black;
+	overflow-y: scroll;
 }
 .resHeader .hidden-drop-menu .pre-hid{
 	width: 100%;
@@ -258,7 +430,6 @@ body{
 	font-weight: bold;
 	cursor: pointer;
 	color: white;
-	/*border-bottom: 1px solid black;*/
 }
 .resHeader .hidden-drop-menu .pre-hid span{
 	float: right;
@@ -300,10 +471,33 @@ body{
 	width: 100%;
 	display: none;
 }
-/*end drop-menu*/
-/*copy res-header*/
+/*END RES-HEADER*/
 
+/*ABOUT page*/
+.page-title{
+	height: 60px;
+	background-color: white;
+}
+.page-title .title{
+	line-height: 60px;
+	height: 60px;
+	position: absolute;
+	left: 0;
+	font-size: 24px;
+	color: #d7b38c;
+	font-weight: bold;
+}
+.page-title .page-tree{
+	line-height: 60px;
+	height: 60px;
+	position: absolute;
+	right: 0;
+}
+.page-title .page-tree span{
+	margin-left: 5px;
+}
 
+/*end ABOUT page*/
 
 /*BANNER*/
 .banner{
@@ -1231,10 +1425,9 @@ body{
 	.header-box .header img{
 		transform: scale(1.2);
 	}
-	#resMenuLogo{
+	.header .headerBtn{
 		opacity: 1;
 		pointer-events: all;
-		cursor: pointer;
 	}
 }
 
@@ -1303,9 +1496,6 @@ body{
 }
 
 @media all and (max-width: 576px){
-	#resMenuLogo{
-		left: 30px;
-	}
 	.stats .info .itemBox{
 		margin-top: 15px;
 	}
@@ -1322,9 +1512,6 @@ body{
 }
 
 @media all and (max-width: 455px){
-	#resMenuLogo{
-		right: 30px;
-	}
 	.introduce2{
 		height: 580px;
 	}
@@ -1370,3 +1557,7 @@ body{
 		margin-left: -15px;
 	}
 }
+
+
+
+/*NEED ADJUST FOR OTHERS PAGE'S RESPON*/
