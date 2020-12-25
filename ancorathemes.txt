@@ -1,7 +1,7 @@
 1. Index check
 http://lakeinn.ancorathemes.com/home/home-2/   90%;
 2.About check
-http://lakeinn.ancorathemes.com/about/   90%;
+http://lakeinn.ancorathemes.com/about/   90%; - 100%;
 3.Team check
 http://lakeinn.ancorathemes.com/our-team/    80%;
 4.Details Team check

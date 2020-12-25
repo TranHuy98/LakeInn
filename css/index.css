@@ -473,7 +473,7 @@ body{
 }
 /*END RES-HEADER*/
 
-/*ABOUT page*/
+/*PAGE TITLE*/
 .page-title{
 	height: 60px;
 	background-color: white;
@@ -495,9 +495,14 @@ body{
 }
 .page-title .page-tree span{
 	margin-left: 5px;
+	font-weight: bold;
+}
+.page-title .page-tree .home:hover{
+	color: #d7b38c;
+	cursor: pointer;
 }
 
-/*end ABOUT page*/
+/*END PAGE TITLE*/
 
 /*BANNER*/
 .banner{
