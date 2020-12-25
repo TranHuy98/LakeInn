@@ -3,11 +3,11 @@ http://lakeinn.ancorathemes.com/home/home-2/   90%;
 2.About check
 http://lakeinn.ancorathemes.com/about/   90%; - 100%;
 3.Team check
-http://lakeinn.ancorathemes.com/our-team/    80%;
+http://lakeinn.ancorathemes.com/our-team/    80%;  -  100%;
 4.Details Team check
 http://lakeinn.ancorathemes.com/team/angelina-whitehead/
 5.List rooms check
-http://lakeinn.ancorathemes.com/room-rates/    50%;
+http://lakeinn.ancorathemes.com/room-rates/    50%; - 100%
 6.Details rooms check
 http://lakeinn.ancorathemes.com/rooms/standard/     45%;
 6.Article check
