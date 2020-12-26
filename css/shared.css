@@ -1496,6 +1496,24 @@ body{
 	.stats .info .itemBox{
 		height: 280px;
 	}
+	.page-title{
+		height: 120px;
+	}
+	.page-title .title{
+		line-height: 60px;
+		height: 60px;
+		position: static;
+		width: 100%;
+		text-align: center;
+	}
+	.page-title .page-tree{
+		margin-top: -15px;
+		line-height: 30px;
+		height: 60px;
+		position: static;
+		width: 100%;
+		text-align: center;
+	}
 }
 
 @media all and (max-width: 576px){

@@ -9,7 +9,7 @@ http://lakeinn.ancorathemes.com/team/angelina-whitehead/
 5.List rooms check
 http://lakeinn.ancorathemes.com/room-rates/    50%; - 100%
 6.Details rooms check
-http://lakeinn.ancorathemes.com/rooms/standard/     45%;
+http://lakeinn.ancorathemes.com/rooms/standard/     95%;
 6.Article check
 http://lakeinn.ancorathemes.com/category/portfolio-3-columns/   40%;
 7.Details article check

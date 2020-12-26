@@ -1,3 +1,5 @@
+
+/*ROOM CONTENT*/
 .room-content{
 	margin-top: 50px;
 	padding-bottom: 50px;
@@ -22,6 +24,11 @@
 	font-weight: bold;
 	margin-top: 20px;
 	line-height: 26px;
+	height: 26px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	text-transform: capitalize;
 }
 .room-item .room-info .slice{
 	width: 90%;
@@ -73,3 +80,16 @@
 	color: #d7b38c;
 	transition: 0.5s;
 }
+/*END ROOM CONTENT*/
+
+
+
+
+
+/*RESPONSIVE*/
+@media all and (max-width: 767px){
+	.room-item .room-img{
+		height: 300px;
+	}
+}
+/*END RESPONSIVE*/

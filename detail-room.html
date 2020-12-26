@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Check Room - LakeInn</title>
+	<title>Detail Room - LakeInn</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="css/index.css">
-	<link rel="stylesheet" type="text/css" href="css/header-footer.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/index.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/shared.css">
+	<link rel="stylesheet" type="text/css" href="css/detail-room.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
 	<link rel="stylesheet" type="text/css" href="css/css/all.css">
@@ -299,9 +300,9 @@
 	<!-- page title -->
 	<div class="page-title container-fluid">
 		<div class="container" style="position: relative;">
-			<p class="title">Rooms & Rates</p>
+			<p class="title">Standard Room</p>
 			<p class="page-tree">
-				<span>Home</span>
+				<span class="home">Home</span>
 				<span><i class="fa fa-angle-right"></i></span>
 				<span>Single</span>
 				<span><i class="fa fa-angle-right"></i></span>
@@ -312,7 +313,178 @@
 	<!-- end page title -->
 
 	
-
+	<!-- detail room -->
+	<div class="detail-room container-fluid">
+		<div class="row">
+			<div class="container">
+				<div class="row">
+					<div class="left col-xl-8 col-lg-8 col-md-12">
+						<div class="row" style="width: 100%;">
+							<div class="room-img left-item" style="background-image: url(img/room1.jpg);">
+								<div class="zoom-layer">
+									<div class="zoom-btn">
+										<i class="far fa-eye"></i>
+									</div>
+								</div>
+							</div>
+							<div class="overview left-item">
+								<p class="room-type">Standard room</p>
+								<p class="price">Start from <span>$75</span> /night</p>
+							</div>
+							<div class="criteria left-item">
+								<div class="row">
+									<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+										<p class="item"><i class="far fa-check-square"></i> Room Type: Double</p>
+										<p class="item"><i class="far fa-check-square"></i> Max Guests: 5</p>
+										<p class="item"><i class="far fa-check-square"></i> Bed Type: Double</p>
+										<p class="item"><i class="far fa-check-square"></i> Room Faces: Another Hotel</p>
+									</div>
+									<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+										<p class="item"><i class="far fa-check-square"></i> Wifi: Yes</p>
+										<p class="item"><i class="far fa-check-square"></i> Breakfast: Yes</p>
+										<p class="item"><i class="far fa-check-square"></i> Room Service: Yes</p>
+										<p class="item"><i class="far fa-check-square"></i> Airport pickup: No</p>
+									</div>
+									<div class="col-12">
+										<p class="description">Find the quiet comfort in the spacious single or double Standard room with amazing view and all the necessary accomodations for a great vacation at our luxury resort. In these rooms with air conditioning (heat and cold) you will have access to mini fridge, telephone, satellite TV, marble bathroom (hairdryer available) and a terrace or a balcony to enjoy the view, nature, sounds and peace.</p>
+									</div>
+									<div class="col-12">
+										<button>all rooms</button>
+									</div>
+								</div>
+							</div>
+							<div class="comment left-item">
+								<p class="title">Add Comments</p>
+								<p class="note">Your email address will not be published. Required fields are marked *</p>
+								<textarea placeholder="Comment"></textarea>
+								<input type="name" name="" placeholder="Name *" class="name">
+								<input type="email" name="" placeholder="Email *" class="email">
+								<input type="text" name="" placeholder="Website" class="web">
+								<button>post comment</button>
+							</div>
+						</div>
+					</div>
+					<div class="right col-xl-4 col-lg-4 col-md-12">
+						<div class="row" style="width: 100%;">
+							<div class="room-category right-item col-12">
+								<p class="title">Categories</p>
+								<p class="item"><i class="fa fa-angle-right"></i><a href="#"> Blog</a></p>
+								<p class="item"><i class="fa fa-angle-right"></i><a href="#"> Classic</a></p>
+								<p class="item"><i class="fa fa-angle-right"></i><a href="#"> Gallery</a></p>
+								<p class="item"><i class="fa fa-angle-right"></i><a href="#"> Mansory 2 Columns</a></p>
+								<p class="item"><i class="fa fa-angle-right"></i><a href="#"> Mansory 3 Columns</a></p>
+								<p class="item"><i class="fa fa-angle-right"></i><a href="#"> News</a></p>
+								<p class="item"><i class="fa fa-angle-right"></i><a href="#"> Portfolio 2 Columns</a></p>
+								<p class="item"><i class="fa fa-angle-right"></i><a href="#"> Portfolio 3 Columns</a></p>
+								<p class="item"><i class="fa fa-angle-right"></i><a href="#"> Post Formats</a></p>
+							</div>
+							<div class="slice"></div>
+							<div class="post right-item col-12">
+								<p class="title">Recent Posts</p>
+								<div class="item">
+									<div class="row" style="margin-left: 0; margin-right: 0;	">
+										<div class="col-4 image" style="background-image: url(img/dining1.jpg);"></div>
+										<div class="col-8">
+											<p class="article"><a href="#">Best Beef steak and Grilled vegetables</a></p>
+											<p class="time"><span class="date">Feb 26,2016</span><span class="mes"><i class="fas fa-comment"></i> 0</span></p>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="row" style="margin-left: 0; margin-right: 0;	">
+										<div class="col-4 image" style="background-image: url(img/dining2.jpg);"></div>
+										<div class="col-8">
+											<p class="article"><a href="#">Best Beef steak and Grilled vegetables</a></p>
+											<p class="time"><span class="date">Feb 26,2016</span><span class="mes"><i class="fas fa-comment"></i> 0</span></p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slice"></div>
+							<div class="calendar right-item col-12">
+								<p class="title">Calendar</p>
+							</div>
+							<div class="slice"></div>
+							<div class="tags right-item col-12">
+								<p class="title">Tags</p>
+								<p class="item">Asia</p>
+								<p class="item">Best deals</p>
+								<p class="item">Cheap Hotels</p>
+								<p class="item">Discount</p>
+								<p class="item">Honeymoon</p>
+								<p class="item">Island</p>
+							</div>
+							<div class="slice"></div>
+							<div class="instagram right-item col-12">
+								<p class="title">Instagram</p>
+								<p class="description">Instagram dis not return a 2020.</p>
+							</div>
+							<div class="slice"></div>
+							<div class="search right-item col-12">
+								<p class="title">Search</p>
+								<input type="search" name="" placeholder="Enter keyword" id="right-search">
+								<label for="right-search"><i class="fa fa-search"></i></label>
+							</div>
+							<div class="slice"></div>
+							<div class="room-category right-item col-12 archives">
+								<p class="title">Archives</p>
+								<p class="item"><i class="fa fa-angle-right"></i><a href="#"> February 2016 </a><span>(39)</span></p>
+								<p class="item"><i class="fa fa-angle-right"></i><a href="#"> March 2017 </a><span>(12)</span></p>
+								<p class="item"><i class="fa fa-angle-right"></i><a href="#"> April 2018 </a><span>(47)</span></p>
+								<p class="item"><i class="fa fa-angle-right"></i><a href="#"> May 2019 </a><span>(24)</span></p>
+								<p class="item"><i class="fa fa-angle-right"></i><a href="#"> June 2020 </a><span>(51)</span></p>
+							</div>
+							<div class="slice"></div>
+							<div class="post right-item col-12 rating">
+								<p class="title">Rating</p>
+								<div class="item">
+									<div class="row" style="margin-left: 0; margin-right: 0;	">
+										<div class="col-4 image" style="background-image: url(img/dining1.jpg);"></div>
+										<div class="col-8">
+											<p class="article"><a href="#">Best Beef steak and Grilled vegetables</a></p>
+											<p class="rate">
+												<span class="star-rate">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</span>
+												<span class="number-rate">
+													5.0
+												</span>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="row" style="margin-left: 0; margin-right: 0;	">
+										<div class="col-4 image" style="background-image: url(img/dining2.jpg);"></div>
+										<div class="col-8">
+											<p class="article"><a href="#">Best Beef steak and Grilled vegetables</a></p>
+											<p class="rate">
+												<span class="star-rate">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</span>
+												<span class="number-rate">
+													4.8
+												</span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- detail room -->
 
 
 	<!-- footer -->	
@@ -380,6 +552,7 @@
 	<!-- JS -->
 	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/detail-room.js"></script>
 	<script type="text/javascript" src="slick/slick.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap-datepicker.min.js"></script>
 	<script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
