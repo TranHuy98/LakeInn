@@ -121,7 +121,15 @@
 }
 .detail-room .left .criteria .description{
 	font-size: 16px;
-	margin-top: 15px;
+	margin-top: 20px;
+}
+.detail-room .left .criteria .article-tag{
+	font-size: 14px;
+	font-weight: bold;
+}
+.detail-room .left .criteria .article-tag span:hover{
+	color: #d7b38c;
+	cursor: pointer;
 }
 .detail-room .left .criteria button{
 	height: 40px;
@@ -333,7 +341,7 @@
 }
 
 .detail-room .right .rating .rate{
-	line-height: 20px;
+	line-height: 26px;
 }
 .detail-room .right .rating .rate .star-rate{
 	font-size: 12px;
@@ -341,7 +349,7 @@
 	margin-right: 20px;
 }
 .detail-room .right .rating .rate .number-rate{
-	padding: 5px 10px;
+	padding: 5px 8px;
 	background-color: #d7b38c;
 	color: white;
 	border-radius: 5px;

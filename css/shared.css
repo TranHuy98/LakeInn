@@ -78,7 +78,7 @@ body{
 .fixed-header{
 	position: fixed;
 	width: 100%;
-	z-index: 3;
+	z-index: 10;
 	animation-timing-function: linear;
 	animation-fill-mode: forwards;
 	animation-name: HEADER-DOWN;
@@ -410,6 +410,7 @@ body{
 	height: 100%;
 	position: absolute;
 	display: block;
+	top: 119px;
 	top: 0px;
 	left: 0px;
 	z-index: 15;
@@ -1412,7 +1413,7 @@ body{
 		position: fixed;
 		top: 0;
 		width: 100%;
-		z-index: 3;
+		z-index: 10;
 	}
 	.banner{
 		margin-top: -30px;
@@ -1431,6 +1432,9 @@ body{
 	.header .headerBtn{
 		opacity: 1;
 		pointer-events: all;
+	}
+	.page-title{
+		margin-top: -30px;
 	}
 }
 

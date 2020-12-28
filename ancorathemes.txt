@@ -11,12 +11,12 @@ http://lakeinn.ancorathemes.com/room-rates/    50%; - 100%
 6.Details rooms check
 http://lakeinn.ancorathemes.com/rooms/standard/     95%;
 6.Article check
-http://lakeinn.ancorathemes.com/category/portfolio-3-columns/   40%;
+http://lakeinn.ancorathemes.com/category/portfolio-3-columns/   100%;
 7.Details article check
-http://lakeinn.ancorathemes.com/8-tips-for-traveling-india/
+http://lakeinn.ancorathemes.com/8-tips-for-traveling-india/     100%;
 8.Gallerry check
 http://lakeinn.ancorathemes.com/grid/
 
 
-COMPLETE: 2  -  need some adjustment in resHeader
-REMAIN : 6
+COMPLETE: 6  -  need some adjustment in resHeader
+REMAIN : 2
