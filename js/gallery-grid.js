@@ -18,3 +18,4 @@ $(document).ready(function(){
 		$(this).find('.layer-item').css('animation-name','buttonHide');
 	});
 });
+

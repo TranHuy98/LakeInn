@@ -96,6 +96,7 @@ body{
 	height: 120px;
 	background-image: var(--darkBG);
 	background-repeat: repeat-x;
+	z-index: 10;
 }
 .header-box .header img{
 	height: 40px;
@@ -410,18 +411,18 @@ body{
 	height: 100%;
 	position: absolute;
 	display: block;
-	top: 119px;
-	top: 0px;
-	left: 0px;
+	top: 0;
+	left: 0;
 	z-index: 15;
 	background-color: #1a1d1d;
 	text-transform: capitalize;
 	font-size: 14px;
+	overflow-y: scroll;
+	overflow-scrolling: touch;
 }
 .resHeader .hidden-drop-menu .itemBox{
 	background-color: #1a1d1d;
 	border-bottom: 1px solid black;
-	overflow-y: scroll;
 }
 .resHeader .hidden-drop-menu .pre-hid{
 	width: 100%;
@@ -1408,12 +1409,6 @@ body{
 @media all and (max-width: 1023px){
 	.header-box .header-info{
 		display: none;
-	}
-	.header-box .header{
-		position: fixed;
-		top: 0;
-		width: 100%;
-		z-index: 10;
 	}
 	.banner{
 		margin-top: -30px;
