@@ -19,7 +19,7 @@ http://lakeinn.ancorathemes.com/room-rates/    50%; - 100%  ok
 
 
 6.Details rooms check		detail-room.html
-http://lakeinn.ancorathemes.com/rooms/standard/     95%;    ok
+http://lakeinn.ancorathemes.com/rooms/standard/     95%;   100% -   ok - calendar done
 
 
 7.Article check				check-article.html
@@ -27,7 +27,7 @@ http://lakeinn.ancorathemes.com/category/portfolio-3-columns/   100%;   headerme
 
 
 8.Details article check 		detail-article.html
-http://lakeinn.ancorathemes.com/8-tips-for-traveling-india/     100%;    ok
+http://lakeinn.ancorathemes.com/8-tips-for-traveling-india/     100%;    ok;
 
 
 9.Gallerry check 			gallery-grid.html

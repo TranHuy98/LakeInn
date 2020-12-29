@@ -121,7 +121,7 @@ body{
 	color: #aaa;
 	padding: 10px 15px;
 }
-.header-box .header .menu li:first-child .title{
+.header-box .header .menu .current-page .title{
 	border: 2px solid #d7b38c;
 	color: var(--lightText);
 }
@@ -138,6 +138,37 @@ body{
 	width: 200%;
 	opacity: 0;
 	pointer-events: none;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+	animation-duration: 0.2s;
+}
+@keyframes dropMenuShow{
+	0%{
+		opacity: 0;
+		pointer-events: none;
+		top: 120px;
+	}
+	100%{
+		opacity: 1;
+		pointer-events: all;
+		top: 40px;
+	}
+}
+@keyframes dropMenuHide{
+	100%{
+		opacity: 0;
+		pointer-events: none;
+		top: 120px;
+	}
+	0%{
+		opacity: 1;
+		pointer-events: all;
+		top: 40px;
+	}
+}
+.header-box .header .menu li:hover .title{
+	border: 2px solid #d7b38c;
+	color: var(--lightText);
 }
 /*ribbon*/
 .header-box .header .menu li .drop-menu .first:before{
@@ -152,16 +183,6 @@ body{
 	border-right: 8px solid var(--lightText);
 }
 /*end ribbon*/
-.header-box .header .menu li:hover .drop-menu{
-	top: 40px;
-	opacity: 1;
-	pointer-events: all;
-	transition: all 0.5s;
-}
-.header-box .header .menu li:hover .title{
-	border: 2px solid #d7b38c;
-	color: var(--lightText);
-}
 .header-box .header .menu li .drop-menu .item{
 	line-height: 40px;
 	background-color: #eee;
@@ -189,13 +210,35 @@ body{
 	width: 100%;
 	opacity: 0;
 	pointer-events: none;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+	animation-duration: 0.2s;
 }
-.header-box .header .menu li .drop-menu .item:hover .drop-child-menu{
-	top: 0px;
-	opacity: 1;
-	pointer-events: all;
-	transition: all 0.5s;
+@keyframes dropChildShow{
+	0%{
+		top: 80px;
+		opacity: 0;
+		pointer-events: none;
+	}
+	100%{
+		top: 0;
+		opacity: 1;
+		pointer-events: all;
+	}
 }
+@keyframes dropChildHide{
+	100%{
+		top: 80px;
+		opacity: 0;
+		pointer-events: none;
+	}
+	0%{
+		top: 0;
+		opacity: 1;
+		pointer-events: all;
+	}
+}
+
 .header-box .header .menu li .drop-child-menu .item{
 	line-height: 40px;
 	background-color: #eee;
@@ -395,7 +438,7 @@ body{
 
 /*RES-HEADER*/
 .resHeader{
-	height: 100%;
+	height: calc(100% - 119px);
 	width: 100%;
 	position: fixed;
 	top: 119px;
@@ -417,8 +460,7 @@ body{
 	background-color: #1a1d1d;
 	text-transform: capitalize;
 	font-size: 14px;
-	overflow-y: scroll;
-	overflow-scrolling: touch;
+	overflow-y: auto;
 }
 .resHeader .hidden-drop-menu .itemBox{
 	background-color: #1a1d1d;
@@ -431,11 +473,11 @@ body{
 	cursor: pointer;
 	color: white;
 }
+.resHeader .hidden-drop-menu .pre-hid a{
+	color: white;
+}
 .resHeader .hidden-drop-menu .pre-hid span{
 	float: right;
-}
-.button-rotate{
-	transform: rotate(180deg);
 }
 .resHeader .hidden-drop-menu .hid-item{
 	width: 100%;
@@ -1528,7 +1570,15 @@ body{
 }
 
 @media all and (max-width: 575px){
-	
+	.banner .banner-item .title{
+		font-size: 50px;
+		line-height: 60px;
+		margin-top: 40%;
+	}
+	.banner .banner-item .description{
+		width: 80%;
+		margin-left: 10%;
+	}
 }
 
 @media all and (max-width: 455px){

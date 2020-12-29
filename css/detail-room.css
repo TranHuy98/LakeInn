@@ -294,7 +294,12 @@
 }
 /*calendar*/
 .detail-room .right .calendar{
-	/*empty*/
+	
+}
+.detail-room .right .calendar-init{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 /*end calendar*/
 .detail-room .right .tags .item{
