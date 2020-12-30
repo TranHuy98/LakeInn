@@ -1,16 +1,23 @@
 
 /*member-detail*/
+.member-detail{
+	margin-top: 50px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 50px;
+}
 .member-detail .member-img{
-	height: 400px;
+	height: 350px;
 	width: 100%;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	position: relative;
 	cursor: pointer;
+	border: 15px solid white;
 }
 .member-detail .member-img .zoom-layer{
 	position: absolute;
+	z-index: 3;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -83,6 +90,74 @@
 	font-size: 30px;
 	color: rgb(255,255,255,0.6);
 }
+
+.member-detail .member-info{
+
+}
+.member-detail .member-info p{
+	font-size: 14px;
+	line-height: 24px;
+	color: rgb(0,0,0,0.5);
+	font-weight: bold;
+}
+.member-detail .member-info .name{
+	font-size: 22px;
+	font-weight: bold;
+	color: black;
+}
+.member-detail .member-info .email{
+
+}
+.member-detail .member-info .icon a{
+	color: rgb(0,0,0,0.4);
+	text-decoration: none;
+	font-size: 40px;
+	margin-right: 15px;
+}
+.member-detail .member-info .icon a:hover{
+	color: #d7b38c;
+}
+.member-detail .member-info .skills{
+	width: 80%;
+}
+.member-detail .member-info .skills p{
+	position: relative;
+	width: 100%;
+	height: 25px;
+	line-height: 25px;
+	font-size: 14px;
+}
+.member-detail .member-info .skills .percent{
+	position: absolute;
+	right: 0;
+}
+.member-detail .member-info .skills .number-count{
+	position: absolute;
+	right: 12px;
+}
+.member-detail .member-info .skills .skill-bar-bg{
+	width: 100%;
+	height: 15px;
+	background-color: white;
+	position: relative;
+	margin-bottom: 10px;
+	margin-top: -5px;
+}
+.member-detail .member-info .skills .skill-bar-bg .skill-bar{
+	position: absolute;
+	top: 5px;
+	bottom: 5px;
+	left: 5px;
+	background-color: #d7b38c;
+}
+
+
+
+
+
+
+
+
 /*end member-detail*/
 
 /*member-contact*/
@@ -196,3 +271,13 @@
 
 
 /*END member-contact*/
+
+
+
+/*RESPONSIVE*/
+@media all and (max-width: 767px){
+	.member-detail .member-info .name{
+		margin-top: 50px;
+	}
+}
+/*END RESPONSIVE*/

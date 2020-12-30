@@ -71,6 +71,9 @@
 	border: 2px solid #555;
 	margin-bottom: 15px;
 }
+.room-item .room-info button:focus{
+	outline: none;
+}
 .room-item .room-info button a{
 	text-decoration: none;
 	color: black;
