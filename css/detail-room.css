@@ -145,9 +145,16 @@
 	padding-left: 15px;
 	padding-right: 15px;
 }
+.detail-room .left .criteria button a{
+	text-decoration: none;
+	color: white;
+}
 .detail-room .left .criteria button:hover{
 	cursor: pointer;
 	background-color: transparent;
+	transition: 0.3s;
+}
+.detail-room .left .criteria button:hover a{
 	color: #d7b38c;
 	transition: 0.3s;
 }

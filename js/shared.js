@@ -30,10 +30,10 @@ $(document).ready(function(){
 // drop menu 
 $(document).ready(function(){
   $('.menu li').mouseenter(function(){
-    $(this).find('.drop-menu').delay(200).css('animation-name','dropMenuShow');
+    $(this).find('.drop-menu').css('animation-name','dropMenuShow');
   })
   $('.menu li').mouseleave(function(){
-    $(this).find('.drop-menu').delay(200).css('animation-name','dropMenuHide');
+    $(this).find('.drop-menu').css('animation-name','dropMenuHide');
   })
 });
 
@@ -143,7 +143,7 @@ $(document).ready(function(){
 });
 
 
-//grand child menu
+//grand child menu of res menu
 $(document).ready(function(){
   $('.pre-hid-child').click(function(){
     $(this).parent().find('.grandchild-menu').slideToggle(500);
