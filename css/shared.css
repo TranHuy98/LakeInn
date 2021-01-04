@@ -519,17 +519,20 @@ body{
 
 /*PAGE TITLE*/
 .page-title{
-	height: 60px;
+	min-height: 60px;
 	background-color: white;
 }
 .page-title .title{
 	line-height: 60px;
-	height: 60px;
+	/*height: 60px;*/
 	position: absolute;
 	left: 0;
 	font-size: 24px;
 	color: #d7b38c;
 	font-weight: bold;
+	/*overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;*/
 }
 .page-title .page-tree{
 	line-height: 60px;
@@ -1421,6 +1424,7 @@ body{
 	user-select: none;
 }
 .footer .copyright p{
+	height: 100px;
 	line-height: 100px;
 	color: var(--lightText);
 	font-size: 16px;
@@ -1544,12 +1548,8 @@ body{
 	.stats .info .itemBox{
 		height: 280px;
 	}
-	.page-title{
-		height: 120px;
-	}
 	.page-title .title{
 		line-height: 60px;
-		height: 60px;
 		position: static;
 		width: 100%;
 		text-align: center;
@@ -1557,7 +1557,6 @@ body{
 	.page-title .page-tree{
 		margin-top: -15px;
 		line-height: 30px;
-		height: 60px;
 		position: static;
 		width: 100%;
 		text-align: center;

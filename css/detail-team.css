@@ -90,6 +90,43 @@
 	font-size: 30px;
 	color: rgb(255,255,255,0.6);
 }
+.member-detail .member-img .img-popup{
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgb(0,0,0,0.7);
+	z-index: 50;
+	display: none;
+}
+.member-detail .member-img .img-popup .img-box{
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	bottom: 50px;
+	right: 50px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	object-fit: cover;
+}
+.member-detail .member-img .img-popup .close-popup{
+	width: 40px;
+	height: 40px;	
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+	border: 1px solid white;
+}
+.member-detail .member-img .img-popup .close-popup i{
+	font-size: 20px;
+	color: white;
+}
 
 .member-detail .member-info{
 
@@ -148,11 +185,27 @@
 	top: 5px;
 	bottom: 5px;
 	left: 5px;
-	background-color: #d7b38c;
 }
-
-
-
+.member-detail .member-info .skills .skill-bar-bg .skill-bar .animate-skill-bar{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #d7b38c;
+	animation-duration: 2.0s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	animation-name: FILLBAR;
+}
+@keyframes FILLBAR{
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 100%;
+	}
+}
 
 
 

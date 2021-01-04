@@ -18,3 +18,23 @@ $(document).ready(function(){
 		language:"vi"
 	});
 });
+
+
+//image popup
+$(document).ready(function(){
+	$('.room-img .zoom-btn').click(function(){
+		$('.room-img .img-popup').css('display','block');
+	});
+	$('.img-popup .close-popup').click(function(){
+		$('.room-img .img-popup').css('display','none');
+	});
+});
+
+// close image popup
+$(document).ready(function(){
+  window.addEventListener('mouseup',function(event){
+    if(event.target != $('.img-box') && event.target.parentNode != $('.img-box')){
+             $('.img-popup').css('display','none');
+    	}
+  });
+});
