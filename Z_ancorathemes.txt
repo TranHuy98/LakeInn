@@ -31,8 +31,10 @@ http://lakeinn.ancorathemes.com/8-tips-for-traveling-india/     100%;    ok;
 
 
 9.Gallerry check 			gallery-grid.html
-http://lakeinn.ancorathemes.com/grid/   95%;   - image popup remain  
+http://lakeinn.ancorathemes.com/grid/   100%; ok  
 
+10.Contact			contact.html
+http://lakeinn.ancorathemes.com/contacts/    100%; ok
 
 COMPLETE: 8
 REMAIN : 0
