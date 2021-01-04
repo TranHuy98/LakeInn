@@ -20,21 +20,20 @@ $(document).ready(function(){
 });
 
 
-//image popup
-$(document).ready(function(){
-	$('.info-layer .zoom').click(function(){
-		$('.info-layer .img-popup').css('display','block');
-	});
-	$('.img-popup .close-popup').click(function(){
-		$('.info-layer .img-popup').css('display','none');
-	});
-});
-
 // close image popup
 $(document).ready(function(){
   window.addEventListener('mouseup',function(event){
-    if(event.target != $('.img-box') && event.target.parentNode != $('.img-box')){
-             $('.img-popup').css('display','none');
+    if(event.target != $('.image-item')){
+             $('.image-show').css('display','none');
     	}
   });
+});
+
+//image popup
+$(document).ready(function(){
+	$('.info-layer .zoom').click(function(){
+		var $bgImg = $(this).parent().parent().find('.image').css('background-image');
+		$('.image-item').css('background-image',$bgImg);
+		$('.image-show').css('display','block');
+	});
 });
