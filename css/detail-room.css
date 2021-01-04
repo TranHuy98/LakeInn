@@ -342,7 +342,7 @@
 .detail-room .right .calendar{
 	
 }
-.detail-room .right .calendar-init{
+.detail-room .right #calendar-init{
 	display: flex;
 	justify-content: center;
 	align-items: center;

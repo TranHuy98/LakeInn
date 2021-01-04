@@ -13,9 +13,8 @@ $(document).ready(function(){
 
 // calendar
 $(document).ready(function(){
-	$('.calendar-init').datepicker({
-		todayHightlight:true,
-		language:"vi"
+	$('#calendar-init').datepicker({
+		todayHighlight: true,
 	});
 });
 
