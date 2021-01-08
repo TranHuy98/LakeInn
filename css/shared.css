@@ -11,7 +11,6 @@
 }
 body{
 	background-image: var(--lightBG);
-	/*background-image: url(../img/greenBG.jpg);*/
 	background-repeat: repeat;
 }
 .backToTop{
@@ -177,6 +176,12 @@ body{
 		pointer-events: none;
 		top: 120px;
 	}
+	1%{
+		pointer-events: none;
+	}
+	99%{
+		pointer-events: none;
+	}
 	100%{
 		opacity: 1;
 		pointer-events: all;
@@ -188,6 +193,12 @@ body{
 		opacity: 0;
 		pointer-events: none;
 		top: 120px;
+	}
+	99%{
+		pointer-events: none;
+	}
+	1%{
+		pointer-events: none;
 	}
 	0%{
 		opacity: 1;
