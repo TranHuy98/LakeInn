@@ -261,6 +261,12 @@ body{
 		opacity: 0;
 		pointer-events: none;
 	}
+	1%{
+		pointer-events: none;
+	}
+	99%{
+		pointer-events: none;
+	}
 	100%{
 		top: 0;
 		opacity: 1;
@@ -271,6 +277,12 @@ body{
 	100%{
 		top: 80px;
 		opacity: 0;
+		pointer-events: none;
+	}
+	99%{
+		pointer-events: none;
+	}
+	1%{
 		pointer-events: none;
 	}
 	0%{
