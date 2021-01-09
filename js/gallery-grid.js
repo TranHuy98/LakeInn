@@ -21,12 +21,12 @@ $(document).ready(function(){
 
 
 // close image popup
-$(document).ready(function(){
-  window.addEventListener('mouseup',function(event){
-    if(event.target != $('.image-item')){
-             $('.image-show').css('display','none');
-    	}
-  });
+$(document).mouseup(function(e) 
+{
+    // if the target of the click isn't the container nor a descendant of the container
+    if (!$('.image-item').is(e.target) && $('.image-item').has(e.target).length === 0){
+        $('.image-show').hide();
+    }
 });
 
 //image popup
