@@ -18,22 +18,23 @@ $(document).ready(function(){
   });
 });
 
-
-//image popup
+//image popup - show and hide
 $(document).ready(function(){
-	$('.member-img .zoom-btn').click(function(){
-		$('.member-img .img-popup').css('display','block');
+	$('.zoom-layer .zoom-btn').click(function(){
+		var $bgImg = $(this).parent().parent().css('background-image');
+		$('.img-box').css('background-image',$bgImg);
+		$('.img-popup').css('display','block');
 	});
 	$('.img-popup .close-popup').click(function(){
 		$('.member-img .img-popup').css('display','none');
 	});
 });
 
-// close image popup
-$(document).ready(function(){
-  window.addEventListener('mouseup',function(event){
-    if(event.target != $('.img-box') && event.target.parentNode != $('.img-box')){
-             $('.img-popup').css('display','none');
-    	}
-  });
+// close image popup when not click on it
+$(document).mouseup(function(e) 
+{
+    // if the target of the click isn't the container nor a descendant of the container
+    if (!$('.img-box').is(e.target) && $('.img-box').has(e.target).length === 0){
+        $('.img-popup').hide();
+    }
 });
