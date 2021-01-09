@@ -20,9 +20,10 @@ $(document).ready(function(){
 
 //image popup - show and hide
 $(document).ready(function(){
+	$bgImg = $('.member-img .bg-replace').attr('src');
+	$('.member-img').css('background-image','url('+ $bgImg +')');
 	$('.zoom-layer .zoom-btn').click(function(){
-		var $bgImg = $(this).parent().parent().css('background-image');
-		$('.img-box').css('background-image',$bgImg);
+		$('.img-box img').attr('src',$bgImg);
 		$('.img-popup').css('display','block');
 	});
 	$('.img-popup .close-popup').click(function(){
@@ -34,7 +35,7 @@ $(document).ready(function(){
 $(document).mouseup(function(e) 
 {
     // if the target of the click isn't the container nor a descendant of the container
-    if (!$('.img-box').is(e.target) && $('.img-box').has(e.target).length === 0){
+    if (!$('.img-box img').is(e.target) && $('.img-box img').has(e.target).length === 0){
         $('.img-popup').hide();
     }
 });

@@ -15,6 +15,9 @@
 	cursor: pointer;
 	border: 15px solid white;
 }
+.member-detail .member-img .bg-replace{
+	display: none;
+}
 .member-detail .member-img .zoom-layer{
 	position: absolute;
 	z-index: 3;
@@ -106,10 +109,13 @@
 	left: 50px;
 	bottom: 50px;
 	right: 50px;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	object-fit: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.member-detail .member-img .img-popup .img-box img{
+	max-width: 100%;
+	max-height: 100%;
 }
 .member-detail .member-img .img-popup .close-popup{
 	width: 40px;

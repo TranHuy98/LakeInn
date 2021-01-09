@@ -19,21 +19,31 @@ $(document).ready(function(){
 	});
 });
 
+//set background for each image
+$(document).ready(function(){
+	$('.gallery-grid .image').each(function(){
+		$bgImg = $(this).children('img').attr('src');
+		$(this).css('background-image','url('+ $bgImg +')');
+	});
+});
 
-// close image popup
-$(document).mouseup(function(e) 
-{
-    // if the target of the click isn't the container nor a descendant of the container
-    if (!$('.image-item').is(e.target) && $('.image-item').has(e.target).length === 0){
+
+//image popup - show and hide
+$(document).ready(function(){
+	$('.info-layer .zoom').click(function(){
+		$bgImg = $(this).parent().parent().find('.image .bg-replace').attr('src');
+		$('.image-item img').attr('src',$bgImg);
+		$('.image-show').css('display','block');
+	});
+	$('.img-popup .close-popup').click(function(){
+		$('.member-img .img-popup').css('display','none');
+	});
+});
+
+// close image popup when not click on it
+$(document).mouseup(function(e){
+    if (!$('.image-item img').is(e.target) && $('.image-item img').has(e.target).length === 0){
         $('.image-show').hide();
     }
 });
 
-//image popup
-$(document).ready(function(){
-	$('.info-layer .zoom').click(function(){
-		var $bgImg = $(this).parent().parent().find('.image').css('background-image');
-		$('.image-item').css('background-image',$bgImg);
-		$('.image-show').css('display','block');
-	});
-});

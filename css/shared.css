@@ -1688,3 +1688,9 @@ body{
 
 
 /*NEED ADJUST FOR OTHERS PAGE'S RESPON*/
+
+/*force print background-image*/
+@media print
+{
+    * {-webkit-print-color-adjust:exact;}
+}
