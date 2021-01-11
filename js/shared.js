@@ -1,3 +1,9 @@
+// preloader
+$(window).on("load",function(){
+     $("#preloader").fadeOut("slow");
+});
+
+
 //back to top
 $(document).ready(function(){
   $(window).scroll(function(){

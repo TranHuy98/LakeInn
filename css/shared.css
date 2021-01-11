@@ -38,6 +38,18 @@ body{
 }
 
 /*loading*/
+#preloader{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: var(--lightBG);
+}
 .lds-dual-ring {
   display: inline-block;
   width: 80px;
@@ -743,6 +755,7 @@ body{
 	width: 100%;
 	text-align: center;
 	font-size: 50px;
+	line-height: 60px;
 }
 .welcome .icon-title{
 	width: 100%;
@@ -754,6 +767,7 @@ body{
 	width: 100%;
 	text-align: center;
 	font-size: 40px;
+	line-height: 50px;
 }
 .welcome .images{
 	margin-top: 50px;
@@ -827,8 +841,9 @@ body{
 .introduce .title{
 	width: 100%;
 	font-size: 60px;
+	line-height: 70px;
 	text-align: center;
-	margin-top: 10%;
+	margin-top: 12%;
 	color: var(--lightText);
 }
 .introduce .detail{
@@ -875,6 +890,7 @@ body{
 	width: 100%;
 	text-align: center;
 	font-size: 50px;
+	line-height: 60px;
 }
 .dining .words .icon-title{
 	width: 100%;
@@ -953,6 +969,7 @@ body{
 .stats .title{
 	margin-top: 50px;
 	font-size: 50px;
+	line-height: 60px;
 	width: 100%;
 	text-align: center;
 }
@@ -1023,6 +1040,7 @@ body{
 .blogs .title{
 	margin-top: 50px;
 	font-size: 50px;
+	line-height: 60px;
 	width: 100%;
 	text-align: center;
 	color: var(--lightText);
@@ -1149,6 +1167,7 @@ body{
 .introduce2 .title{
 	width: 100%;
 	font-size: 60px;
+	line-height: 70px;	
 	text-align: center;
 	color: var(--lightText);
 }
@@ -1194,6 +1213,7 @@ body{
 	width: 100%;
 	text-align: center;
 	font-size: 50px;
+	line-height: 60px;
 }
 .review .icon-title{
 	width: 100%;
@@ -1315,6 +1335,7 @@ body{
 .check .check-items .ad{
 	color: var(--lightText);
 	font-size: 40px;
+	line-height: 50px;
 	width: 100%;
 }
 .check .check-items .detail{
