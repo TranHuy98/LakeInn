@@ -12,6 +12,7 @@
 body{
 	background-image: var(--lightBG);
 	background-repeat: repeat;
+	border-bottom: 1px solid transparent;
 }
 .backToTop{
 	width: 40px;
@@ -1638,18 +1639,18 @@ body{
 	}
 }
 
+@media all and (max-width: 480px){
+	.resHeader .hidden-drop-menu{
+		width: 100%;
+	}
+}
+
 @media all and (max-width: 455px){
 	.introduce2{
 		height: 580px;
 	}
 	.introduce2 .title{
 		line-height: 70px;
-	}
-}
-
-@media all and (max-width: 425px){
-	.resHeader .hidden-drop-menu{
-		width: 100%;
 	}
 }
 
