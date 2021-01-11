@@ -12,7 +12,8 @@
 body{
 	background-image: var(--lightBG);
 	background-repeat: repeat;
-	border-bottom: 1px solid transparent;
+	border-bottom: 1px solid transparent !important;
+	padding-bottom: 20px;
 }
 .backToTop{
 	width: 40px;
