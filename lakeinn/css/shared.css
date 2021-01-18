@@ -120,6 +120,7 @@ body{
 }
 .fixed-header{
 	position: fixed;
+	border-bottom: 1px solid #d7b38c;
 	width: 100%;
 	z-index: 10;
 	animation-timing-function: linear;
