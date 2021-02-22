@@ -12,7 +12,6 @@ body{
 	background-image: url(../img/light-wall.jpg);
 	background-repeat: repeat;
 	border-bottom: 1px solid transparent !important;
-	padding-bottom: 20px;
 }
 .backToTop{
 	width: 40px;
@@ -756,7 +755,7 @@ body{
 	width: 100%;
 	text-align: center;
 	font-size: 50px;
-	line-height: 60px;
+	line-height: 58px;
 }
 .welcome .icon-title{
 	width: 100%;
@@ -768,7 +767,7 @@ body{
 	width: 100%;
 	text-align: center;
 	font-size: 40px;
-	line-height: 50px;
+	line-height: 48px;
 }
 .welcome .images{
 	margin-top: 50px;
@@ -805,6 +804,7 @@ body{
 	width: 80%;
 	margin-left: 10%;
 	font-size: 20px;
+	line-height: 26px;
 	text-align: center;
 }
 .welcome .detail .more{
@@ -914,6 +914,7 @@ body{
 	width: 80%;
 	margin-left: 10%;
 	font-size: 20px;
+	line-height: 26px;
 	text-align: center;
 }
 .dining .images{
@@ -1317,17 +1318,16 @@ body{
 }
 .slick-dots li button:before{
 	content: '' !important;
-	background-color: #c0c0c0 !important;
+	background-color: transparent !important;
 	border: 1px solid #c0c0c0;
 	border-radius: 10px !important;
-	background-color: transparent;
 	opacity: 1 !important;
 }
 .slick-dots li button:focus:before{
 	border: 1px solid #c0c0c0;
 }
 .slick-dots li.slick-active button:before{
-	background-color: transparent !important;
+	background-color: #c0c0c0 !important;
 	opacity: 1 !important;
 }
 /*end indicator for slide*/
@@ -1414,6 +1414,7 @@ body{
 	border: none;
 	border-radius: 5px;
 	color: white;
+	padding: 0 15px;
 }
 .footer .info .contact textarea{
 	width: 100%;
@@ -1424,6 +1425,7 @@ body{
 	border: none;
 	border-radius: 5px;
 	color: white;
+	padding: 5px 15px;
 }
 .footer .info .contact .policy{
 	margin-top: 10px;
