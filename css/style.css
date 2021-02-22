@@ -7,11 +7,12 @@
 
 *{
 	font-family: 'Roboto Slab', serif;
+	/*border: 1px solid red;*/
 }
 body{
 	background-image: url(../img/light-wall.jpg);
 	background-repeat: repeat;
-	border-bottom: 1px solid transparent !important;
+	border-bottom: 50px solid #262626;
 }
 .backToTop{
 	width: 40px;
@@ -1530,13 +1531,13 @@ body{
 	margin-top: 10px;
 }
 .footer .copyright{
-	height: 100px;
-	background-color: rgb(0,0,0,0.2);
+	height: 50px;
+	background-color: #262626;
 	user-select: none;
 }
 .footer .copyright p{
-	height: 100px;
-	line-height: 100px;
+	line-height: 16px;
+	margin-top: 42px;
 	color: white;
 	font-size: 16px;
 }
