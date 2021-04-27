@@ -7,7 +7,7 @@
 
 *{
 	font-family: 'Roboto Slab', serif;
-	/*border: 1px solid red;*/
+	/* border: 1px solid red; */
 }
 body{
 	background-image: url(../img/light-wall.jpg);
@@ -1754,4 +1754,10 @@ body{
 @media print
 {
     * {-webkit-print-color-adjust:exact;}
+}
+
+
+.assfh{
+	transform: scale(1.5);
+	filter: grayscale(100%);
 }
